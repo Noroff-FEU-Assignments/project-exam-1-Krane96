@@ -1,0 +1,40 @@
+body{
+  max-width: 1200px;
+    
+}
+.dropDownMenu{
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 2px 3px black;
+
+}
+
+.dropDownMenu ul{
+    list-style-type: none;
+    padding: 0;
+}
+.dropDownMenu a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropDownMenu label{
+    cursor: pointer;
+    background: url(/images/menu-icon.png) no-repeat left center;
+    padding: 30px 0 30px 80px;
+}
+input#menuCheckbox{
+    display: none;
+}
+.menu{
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+/*toggle*/
+
+input:checked ~ .menu{
+    max-height: 100%;
+}
