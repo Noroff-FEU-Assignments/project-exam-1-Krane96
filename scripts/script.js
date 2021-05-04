@@ -30,3 +30,44 @@ function createHTML(blogPosts){
     })
 
 }
+
+
+/* Form Validation*/
+function validation(){
+    
+
+const name = document.querySelector("#name").value;
+const email = document.querySelector("#email");
+const subject = document.querySelector("#subject");
+const message = document.querySelector("#message");
+const errorMsg = document.querySelector("#error-message");
+let text;
+const regEx = /\S+@\S+\.\S+/;
+
+
+errorMsg.style.padding = "10px";
+
+if(name.length <5){
+    text = "Please Enter a Valid Name";
+    errorMsg.innerHTML = text;
+    return false;
+}
+if(subject.length <15){
+    text = "Subject must be 15 Characters or More";
+    errorMsg.innerHTML = text;
+    return false;
+}
+if(message.length <25){
+    text = "Message Must Be 25 Characters or More";
+    errorMsg.innerHTML = text;
+    return false;
+}
+
+
+
+alert ("Message Sent!");
+return true;
+
+
+
+}
