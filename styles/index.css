@@ -1,14 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 :root{
-  --var1: #22223B;
+  --var1: #0D1321;
   --var2: #4A4E69;
   --var3: #F2E9E4;
   --var4: #C9ADA7;
   --var5: #9A8C98;
+  --var6: #3E5C76;
+  --var7: #748CAB;
 }
 
 section{
@@ -40,7 +42,7 @@ header{
     line-height: 100px;
     font-size: 1.4em;
     margin: 0;
-    font-family: 'Knewave';
+    font-weight: bold;
 }
 .menu a{
     color: var(--var3);
@@ -64,7 +66,7 @@ header{
     display: none;
 }
 .menu a:hover, .show-menu-button:hover, .hide-menu-button:hover{
-color: burlywood;
+color: var(--var4);
 }
 
 #chk{
@@ -82,7 +84,7 @@ color: burlywood;
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: burlywood;
+        background: var(--var1);
         top: 0;
         right: -100%;
         text-align: center;
@@ -118,7 +120,7 @@ color: burlywood;
 .form-container{    
     max-width: 300px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.808);
+    background: var(--var1);
     padding: 20px;
     border-radius: 3px;
     box-shadow: 1px 1px 3px;
@@ -127,7 +129,7 @@ color: burlywood;
 .form-container h2{
     text-align: center;
     margin-bottom: 20px;
-    color: blanchedalmond;
+    color: var(--var3);
 
 }
 
@@ -141,30 +143,35 @@ color: burlywood;
 .form-container .contact-input input[type="text"],
 .form-container textarea{
     width: 100%;
-    border: 1px solid blanchedalmond;
+    border: 1px solid var(--var3);
     padding: 7px 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    
 }
 .form-container .submit-button input[type="submit"]{
 border: 0;
 width: 100%;
-background: blanchedalmond;
-color: rgba(0, 0, 0, 0.808);
+background: var(--var3);
+color: var(--var1);
 border-radius: 25px;
 padding: 7px 0;
 text-transform: uppercase;
 letter-spacing: 2px;
 margin-top: 15px;
 cursor: pointer;
+font-weight: bold;
+font-family: 'Noto Sans JP', sans-serif;
 }
 
 .form-container #error-message{
     margin-bottom: 20px;
     padding: 0;
-    background: red;
+    background: #e63946;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     transition: all 0.5s ease;
-    color: blanchedalmond;
+    color: var(--var3);
     font-weight: bold;
-     
+    border-radius: 4px;
 }

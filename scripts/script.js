@@ -20,9 +20,10 @@ function createHTML(blogPosts){
     blogPosts.forEach(function(post){
         posts.innerHTML += `
         <div class="blogPosts">
+            <a href="specificPost.html?id=${post.id}">
             <h1>${post.title.rendered}</h1>
-            <a href="/specificPost.html?id=${post.id}">
-            <img>${post.excerpt.rendered}</img>
+            
+            <img></img>
             </a>
         </div>
         
@@ -48,7 +49,7 @@ let text;
 const regEx = /\S+@\S+\.\S+/;
 
 
-errorMsg.style.padding = "10px";
+errorMsg.style.padding = "3px";
 
 if(name.length <5){
     text = "Please Enter a Valid Name";
