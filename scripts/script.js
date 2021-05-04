@@ -21,7 +21,7 @@ function createHTML(blogPosts){
         posts.innerHTML += `
         <div class="blogPosts">
             <h1>${post.title.rendered}</h1>
-            <a href="specificPost.html?id=${post.id}">
+            <a href="/specificPost.html?id=${post.id}">
             <img>${post.excerpt.rendered}</img>
             </a>
         </div>
