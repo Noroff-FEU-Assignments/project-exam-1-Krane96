@@ -4,10 +4,15 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 :root{
-
+  --var1: #22223B;
+  --var2: #4A4E69;
+  --var3: #F2E9E4;
+  --var4: #C9ADA7;
+  --var5: #9A8C98;
 }
+
 section{
-    background: rgba(0, 0, 0, 0.808);
+    background: var(--var1);
 }
 
 
@@ -15,14 +20,14 @@ section{
 header{
     padding: 0 20px;
     height: 100px;
-    color: blanchedalmond;
+    color: var(--var3);
     max-width: 1200px;
     margin: 0 auto;
 }
 .logo{
     cursor: pointer;
     font-family: 'Freckle Face';
-    color: blanchedalmond;
+    color: var(--var3);
     float: left;
     text-transform: uppercase;
     line-height: 100px;
@@ -38,7 +43,7 @@ header{
     font-family: 'Knewave';
 }
 .menu a{
-    color: blanchedalmond;
+    color: var(--var3);
     text-transform: uppercase;
     text-decoration: none;
     padding: 0 10px;
