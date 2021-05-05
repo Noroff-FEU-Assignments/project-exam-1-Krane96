@@ -17,8 +17,8 @@ body > .page {
     outline: solid 1px black;
 }
 :root{
-  --var1: #242423;
-  --var2: #4A4E69;
+  --var1: #0b090a;
+  --var2: #f5cb5c;
   --var3: #F2E9E4;
   --var4: #C9ADA7;
   --var5: #9A8C98;
@@ -143,8 +143,6 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    
-
 }
 .social-media{
     list-style: none;
@@ -197,7 +195,7 @@ footer{
     background: var(--var1);
     padding: 20px;
     border-radius: 3px;
-    box-shadow: 1px 1px 3px;
+    box-shadow:  1px 1px 5px;
     margin: 40px auto;
     
 }
@@ -227,7 +225,7 @@ footer{
 .form-container .submit-button input[type="submit"]{
 border: 0;
 width: 100%;
-background: var(--var3);
+background: var(--var2);
 color: var(--var1);
 border-radius: 25px;
 padding: 7px 0;
@@ -237,6 +235,7 @@ margin-top: 15px;
 cursor: pointer;
 font-weight: bold;
 font-family: 'Noto Sans JP', sans-serif;
+box-shadow: 1px 1px 3px var(--var2);
 }
 
 .form-container #error-message{
