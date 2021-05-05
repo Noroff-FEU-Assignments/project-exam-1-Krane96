@@ -3,6 +3,19 @@ body{
     padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
 }
+html, body{
+    height: 100%;
+   
+}
+body > .page {
+    height: auto;
+    min-height: 100%;
+}
+.page {
+    width: 100%;
+    position: relative;
+    outline: solid 1px black;
+}
 :root{
   --var1: #242423;
   --var2: #4A4E69;
@@ -116,12 +129,13 @@ footer{
     background: var(--var7);
     color: var(--var3);
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 20px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
-
+    margin-bottom: -150px;
 }
+
 
 .footer-container{
     display: flex;
@@ -129,6 +143,8 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    
+
 }
 .social-media{
     list-style: none;
@@ -183,6 +199,7 @@ footer{
     border-radius: 3px;
     box-shadow: 1px 1px 3px;
     margin: 40px auto;
+    
 }
 .form-container h2{
     text-align: center;
