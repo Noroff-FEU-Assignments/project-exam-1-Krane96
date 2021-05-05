@@ -118,6 +118,8 @@ footer{
     height: auto;
     width: 100vw;
     padding-top: 20px;
+    position: fixed;
+    bottom: 0;
 
 }
 
@@ -170,7 +172,7 @@ footer{
 
 
 
-/* Contact Page*/
+/* Contact HTML*/
 
 
 .form-container{    
@@ -230,4 +232,12 @@ font-family: 'Noto Sans JP', sans-serif;
     color: var(--var3);
     font-weight: bold;
     border-radius: 4px;
+}
+
+
+
+/* Blog HTML */
+.blogPosts{
+    max-width: 1200px;
+    margin: 0 auto;
 }
