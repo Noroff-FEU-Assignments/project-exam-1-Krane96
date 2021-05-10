@@ -266,6 +266,9 @@ box-shadow: 1px 1px 3px var(--var2);
 .blogPosts p{
     display: none;
 }
+.blogPosts img{
+    width: 100%;
+}
 
 #specific-blog-post{
     max-width: 1200px;
