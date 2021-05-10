@@ -260,7 +260,10 @@ box-shadow: 1px 1px 3px var(--var2);
     text-decoration: none;
     color: var(--var1);
 }
-.blogPosts p, ul{
+.blogPosts ul{
+    display: none;
+}
+.blogPosts p{
     display: none;
 }
 
