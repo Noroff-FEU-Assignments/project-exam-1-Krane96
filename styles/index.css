@@ -131,7 +131,6 @@ footer{
     height: auto;
     width: 100%;
     padding-top: 20px;
-    position: absolute;
     bottom: 0;
     margin-bottom: -150px;
 }
@@ -256,4 +255,24 @@ box-shadow: 1px 1px 3px var(--var2);
 .blogPosts{
     max-width: 1200px;
     margin: 0 auto;
+}
+.blogPosts a{
+    text-decoration: none;
+    color: var(--var1);
+}
+.blogPosts p, ul{
+    display: none;
+}
+
+#specific-blog-post{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#specific-blog-post h1{
+    text-align: center;
+}
+.wp-block-image{
+    text-align: center;
+    max-width: 100%;
+    
 }

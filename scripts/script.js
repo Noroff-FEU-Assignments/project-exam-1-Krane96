@@ -22,9 +22,8 @@ function createHTML(blogPosts){
         <div class="blogPosts">
             <a href="specificPost.html?id=${post.id}">
             <h1>${post.title.rendered}</h1>
-            
-            <img></img>
             </a>
+            <img>${post.content.rendered}</img>
         </div>
         
         
@@ -37,41 +36,51 @@ function createHTML(blogPosts){
 
 
 /* Form Validation*/
+
 function validation(){
-    
+
 
 const name = document.querySelector("#name").value;
-const email = document.querySelector("#email");
-const subject = document.querySelector("#subject");
-const message = document.querySelector("#message");
+const email = document.querySelector("#email").value;
+const subject = document.querySelector("#subject").value;
+const message = document.querySelector("#message").value;
 const errorMsg = document.querySelector("#error-message");
+const regex = (/\S+@\S+\.\S+/).value;
 let text;
-const regEx = /\S+@\S+\.\S+/;
 
-
-errorMsg.style.padding = "3px";
 
 if(name.length <5){
-    text = "Please Enter a Valid Name";
+    text = "Please enter a valid name"
     errorMsg.innerHTML = text;
     return false;
 }
+
+
+if(email.value = regex){
+    text = "Please enter a valid E-mail address"
+    errorMsg.innerHTML = text;
+    return false;
+}
+
 if(subject.length <15){
-    text = "Subject must be 15 Characters or More";
+    text = "Subject must be 15 characters or longer"
     errorMsg.innerHTML = text;
     return false;
 }
+
+
 if(message.length <25){
-    text = "Message Must Be 25 Characters or More";
+    text = "Message must be 25 characters or longer"
     errorMsg.innerHTML = text;
     return false;
 }
 
 
 
-alert ("Message Sent!");
 return true;
 
-
-
 }
+
+
+
+
