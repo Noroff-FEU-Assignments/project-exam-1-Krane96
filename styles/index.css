@@ -250,6 +250,7 @@ box-shadow: 3px 1px 1px var(--var2);
     color: var(--var3);
     font-weight: bold;
     border-radius: 3px;
+    text-transform: capitalize;
 }
 
 
