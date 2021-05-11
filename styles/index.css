@@ -128,6 +128,8 @@ color: var(--var4);
     margin: 0 auto;
 }
 
+/* Footer */
+
 footer{
     background: var(--var7);
     color: var(--var3);
@@ -135,7 +137,7 @@ footer{
     width: 100%;
     padding-top: 20px;
     bottom: 0;
-    margin-bottom: -150px;
+    
 }
 
 
@@ -145,6 +147,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    
 }
 .social-media{
     list-style: none;
@@ -317,7 +320,7 @@ box-shadow: 3px 1px 1px var(--var2);
     font-family: luckiest guy;
     padding: 10px 2px;
     margin-bottom: 10px;
-    position: relative;
+  
 }
 .container-1 h2{
     text-align: center;
@@ -334,31 +337,9 @@ box-shadow: 3px 1px 1px var(--var2);
     margin-bottom: 10px;
     font-weight: lighter;
     text-transform: uppercase;
-    position: relative;
     padding-bottom: 20px;
 }
-.tiny-border-2::after{
-    content: '';
-    background: var(--var7);
-    width: 100px;
-    height: 4px;
-    border-radius: 7px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.tiny-border-1::after{
-    content: '';
-    background: var(--var7);
-    width: 80px;
-    height: 4px;
-    border-radius: 7px;
-    position: absolute;
-    bottom: 0;
-    left: 11%;
-    transform: translateX(-50%);
-}
+
 .about{
     max-width: 400px;
     text-align: left;
@@ -366,5 +347,4 @@ box-shadow: 3px 1px 1px var(--var2);
 }
 .about p{
     padding: 15px;
-    opacity: 90%;
 }
