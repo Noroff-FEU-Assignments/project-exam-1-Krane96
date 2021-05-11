@@ -306,27 +306,65 @@ box-shadow: 3px 1px 1px var(--var2);
 /* About */
 .container-1 img{
     max-width: 95%;
-    margin: 10px auto;
+    margin: 15px auto;
     align-items: center;
     display: flex;
 }
 .container-1 h1{
+    margin: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: luckiest guy;
+    padding: 10px 2px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.container-1 h2{
     text-align: center;
     margin-bottom: 0;
     font-family: knewave;
     font-size: 1.8em;
     letter-spacing: 2px;
 }
-.container-1 h2{
+
+.container-1 h3{
     text-align: center;
     margin: 0 auto;
     font-size: 1.1em;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-weight: lighter;
     text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+}
+.tiny-border-2::after{
+    content: '';
+    background: var(--var7);
+    width: 100px;
+    height: 4px;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tiny-border-1::after{
+    content: '';
+    background: var(--var7);
+    width: 80px;
+    height: 4px;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 11%;
+    transform: translateX(-50%);
 }
 .about{
-    max-width: 370px;
+    max-width: 400px;
     text-align: left;
     margin: 20px auto;
+}
+.about p{
+    padding: 15px;
+    opacity: 90%;
 }
