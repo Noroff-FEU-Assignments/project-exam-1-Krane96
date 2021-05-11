@@ -20,10 +20,11 @@ function createHTML(blogPosts){
     blogPosts.forEach(function(post){
         posts.innerHTML += `
         <div class="blogPosts">
-            <img>${post.content.rendered}</img>
             <a href="specificPost.html?id=${post.id}">
             <h1>${post.title.rendered}</h1>
+            <img>${post.content.rendered}</img>
             </a>
+            
         </div>
         
         

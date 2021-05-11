@@ -12,7 +12,7 @@ body > .page {
     min-height: 100%;
 }
 h1{
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 .page {
     width: 100%;
@@ -258,8 +258,8 @@ box-shadow: 1px 1px 3px var(--var2);
 .blogPosts{
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
     margin-top: 50px;
+    border-bottom: 1px solid var(--var3);
 }
 .blogPosts a{
     text-decoration: none;
@@ -276,9 +276,12 @@ box-shadow: 1px 1px 3px var(--var2);
     height: 100%;
 }
 .blogPosts h1{
-    margin: 10px auto;
-    max-width: 300px;
-    font-weight: 700;
+    margin: 0px 15px ;
+    max-width: 200px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: capitalize;
+    font-family: knewave;
     
 }
 
@@ -292,7 +295,5 @@ box-shadow: 1px 1px 3px var(--var2);
 }
 .wp-block-image{
     margin: 0 auto;
-    max-width: 80%;
-    
-    
+    max-width: 95%;
 }
