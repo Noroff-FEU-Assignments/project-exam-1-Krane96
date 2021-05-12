@@ -22,6 +22,9 @@ function createHTML(blogPosts){
         <div class="blogPosts">
             <a href="specificPost.html?id=${post.id}">
             <h1>${post.title.rendered}</h1>
+            </a>
+            <span class="author"> By Martin Lian Krane</span>
+            <a href="specificPost.html?id=${post.id}">
             <img>${post.content.rendered}</img>
             </a>
             
