@@ -93,13 +93,12 @@ color: var(--var4);
 .copyright-menu{
     font-size: 0.8em;
     display: block;
-    margin-top: 400px;
+    margin-top: 300px;
     text-align: center;
     font-family: 'Noto Sans JP', sans-serif;
-}
-.copyright-menu{
     display: none;
 }
+
 
 @media screen and (max-width: 800px){
     .show-menu-button, .hide-menu-button{
