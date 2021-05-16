@@ -90,6 +90,16 @@ color: var(--var4);
     z-index: -1111;
     display: none;
 }
+.copyright-menu{
+    font-size: 0.8em;
+    display: block;
+    margin-top: 400px;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.copyright-menu{
+    display: none;
+}
 
 @media screen and (max-width: 800px){
     .show-menu-button, .hide-menu-button{
@@ -120,12 +130,36 @@ color: var(--var4);
     #chk:checked ~ .menu{
         right: 0;
     }
+    .copyright-menu{
+        display: block;
+    }
+    
 }
 
 .container-1{
     max-width: 1200px;
     margin: 0 auto;
 }
+/* Carousel */
+.carousel-container{
+ width: 90%;
+ margin: 0 auto;
+ overflow: hidden;
+ 
+}
+.carousel-slide{
+ display: flex;
+ width: 100%;
+ height: 500px;
+}
+.carousel-slide ul{
+    display: none;
+}
+.carousel-slide p{
+    display: none;
+}
+
+
 
 /* Footer */
 

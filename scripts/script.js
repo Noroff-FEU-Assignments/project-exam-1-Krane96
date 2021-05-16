@@ -1,3 +1,4 @@
+/* Getting posts from api */
 const url = "https://www.martinlk.no/wp-json/wp/v2/posts";
 const posts = document.querySelector(".blogPosts");
 
