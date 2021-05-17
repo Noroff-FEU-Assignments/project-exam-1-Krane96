@@ -1,3 +1,4 @@
+/*
 const url = "https://www.martinlk.no/wp-json/wp/v2/posts";
 const latestPosts = document.querySelector(".carousel-slide");
 
@@ -19,7 +20,7 @@ makeSlider();
 function createHTML(carouselSlider){
     carouselSlider.forEach(function(post){
         latestPosts.innerHTML += `
-        <div class="carousel-slide">
+        <div class="carousel-slides">
             
             
             <img>${post.content.rendered}</img>
@@ -33,15 +34,16 @@ function createHTML(carouselSlider){
     })
 
 };
+*/
 
 const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImages = document.querySelector('.carousel-slide');
+const carouselImages = document.querySelectorAll('.carousel-slide img');
 
 const prevButton = document.querySelector('#previousBtn')
 const nextButton = document.querySelector('#nextBtn')
 
 let counter = 1;
-const size = carouselImages[0];
+const size = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
@@ -50,5 +52,10 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 nextButton.addEventListener('click', () => {
     carouselSlide.style.transition = "transform 0.4s ease-in-out";
     counter++;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+prevButton.addEventListener('click', () => {
+    carouselSlide.style.transition = "transform 0.4s ease-in-out";
+    counter--;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });

@@ -91,7 +91,7 @@ color: var(--var4);
     display: none;
 }
 .copyright-menu{
-    font-size: 0.8em;
+    font-size: 0.6em;
     display: block;
     margin-top: 300px;
     text-align: center;
@@ -143,7 +143,6 @@ color: var(--var4);
 .carousel-container{
  width: 90%;
  margin: 0 auto;
- overflow: hidden;
  
 }
 .carousel-slide{
