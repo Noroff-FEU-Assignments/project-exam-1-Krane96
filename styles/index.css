@@ -34,14 +34,15 @@ button{
 border: none;
 background: var(--var2);
 color: var(--var1);
-border-radius: 5px;
+border-radius: 1px;
 padding: 10px 20px;
 text-transform: uppercase;
 letter-spacing: 1px;
 cursor: pointer;
 font-weight: bold;
 font-family: 'Noto Sans JP', sans-serif;
-box-shadow: 1px 1px 4px var(--var2);
+border-bottom: 4px solid rgba(155, 110, 27, 0.623);
+border-right: 3px solid rgba(155, 110, 27, 0.623);
 
 }
 
@@ -186,7 +187,8 @@ footer{
 }
 .subscribe{
     background-color: var(--var1);
-    padding-top: 2px;   
+    padding: 20px 20px; 
+    
 }
 .subscribe-2{
     display: flex;
@@ -199,13 +201,26 @@ footer{
     margin: auto 0;
     text-transform: uppercase;
     margin-left: 10px;
+    border-radius: 1px;
+    
 }
 .subscribe-2 h3{
     margin: 20px 10px;
 }
+.subscribe-3 input{
+    border-radius: 1px;
+    border: none;
+    padding: 0 1.2rem;
+    margin-right: 1.1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
 .subscribe-3{
     display: flex;
-    align-content: space-around;
+    justify-content: center;
+
+    
 }
 
 .footer-container{
