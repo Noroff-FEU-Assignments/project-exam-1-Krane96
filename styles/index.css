@@ -181,13 +181,13 @@ footer{
     background: var(--var7);
     color: var(--var3);
     width: 100%;
-    margin-top: auto;
+    margin-top: 40rem;
     
 }
 .subscribe{
     background-color: var(--var1);
     padding: 20px 20px;
-    margin-top: auto; 
+    margin-top: ; 
     
 }
 .subscribe-2{
@@ -202,6 +202,7 @@ footer{
     text-transform: uppercase;
     margin-left: 10px;
     border-radius: 1px;
+    margin-left: 0;
     
 }
 .subscribe-2 h3{
