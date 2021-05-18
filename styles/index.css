@@ -168,8 +168,13 @@ footer{
     color: var(--var3);
     width: 100%;
     padding-top: 20px;
-    margin-top: auto;
+    
 
+}
+.subscribe{
+    background-color: var(--var2);
+    margin-top: auto;
+    
 }
 
 .footer-container{
@@ -230,7 +235,7 @@ footer{
     width: 100%;
     background: var(--var1);
     padding: 20px;
-    border-radius: 3px;
+    border-radius: 2px;
     box-shadow:  1px 1px 5px;
     margin: 40px auto;
     
@@ -256,7 +261,7 @@ footer{
     padding: 7px 0;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 ::placeholder{
     padding-left: 5px;
@@ -268,7 +273,7 @@ border: 0;
 width: 100%;
 background: var(--var2);
 color: var(--var1);
-border-radius: 7px;
+border-radius: 5px;
 padding: 7px 0;
 text-transform: uppercase;
 letter-spacing: 2px;
@@ -288,7 +293,7 @@ box-shadow: 1px 1px 4px var(--var2);
     transition: all 0.5s ease;
     color: var(--var3);
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 2px;
     text-transform: capitalize;
 }
 
@@ -317,11 +322,12 @@ box-shadow: 1px 1px 4px var(--var2);
 .blogPosts h1{
     margin: 0px 15px ;
     max-width: 230px;
-    font-weight: 400;
+    font-weight: normal;
     text-align: left;
     text-transform: capitalize;
-    font-family: knewave;
+    font-family: luckiest guy;
     margin-bottom: -20px;
+    font-size: 1.3em;
     
 }
 .author{
