@@ -50,7 +50,7 @@ const email = document.querySelector("#email").value;
 const subject = document.querySelector("#subject").value;
 const message = document.querySelector("#message").value;
 const errorMsg = document.querySelector("#error-message");
-const regex = (/\S+@\S+\.\S+/).value;
+const pattern = /\S+@\S+\.\S+/;
 let text;
 
 
@@ -60,12 +60,12 @@ if(name.length <5){
     return false;
 }
 
-
-if(email.value = regex){
-    text = "Please enter a valid E-mail address"
+if(email.match(pattern)){
+    text = "Invalid e-mail address";
     errorMsg.innerHTML = text;
     return false;
 }
+
 
 if(subject.length <15){
     text = "Subject must be 15 characters or longer"
@@ -87,8 +87,3 @@ return true;
 }
 
 
-function validation(email) {
-    const regEx = /\S+@\S+\.\S+/;
-    const patternMatches = regEx.test(email);
-    return patternMatches;
-}
