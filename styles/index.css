@@ -214,10 +214,13 @@ footer{
     margin-right: 1.1rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
+    max-width: 200px;
+    overflow: hidden;
 }
 
 .subscribe-3{
     display: flex;
+    justify-content: center;
      
 }
 
