@@ -35,7 +35,7 @@ function createHTML(carouselSlider){
 
 };
 */
-
+/*
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
 
@@ -59,3 +59,4 @@ prevButton.addEventListener('click', () => {
     counter--;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
+*/

@@ -268,7 +268,7 @@ border: 0;
 width: 100%;
 background: var(--var2);
 color: var(--var1);
-border-radius: 25px;
+border-radius: 7px;
 padding: 7px 0;
 text-transform: uppercase;
 letter-spacing: 2px;
@@ -276,7 +276,7 @@ margin-top: 15px;
 cursor: pointer;
 font-weight: bold;
 font-family: 'Noto Sans JP', sans-serif;
-box-shadow: 3px 1px 1px var(--var2);
+box-shadow: 1px 1px 4px var(--var2);
 }
 
 .form-container #error-message{
@@ -375,6 +375,7 @@ box-shadow: 3px 1px 1px var(--var2);
     font-family: luckiest guy;
     padding: 10px 2px;
     margin-bottom: 10px;
+    border-bottom: 3px solid var(--var7);
   
 }
 .container-1 h2{
@@ -398,8 +399,15 @@ box-shadow: 3px 1px 1px var(--var2);
 .about{
     max-width: 400px;
     text-align: left;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 .about p{
-    padding: 15px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.about img{
+    border-radius: 50%;
+    width: 40%;
+    height: 190px;
+    
 }
