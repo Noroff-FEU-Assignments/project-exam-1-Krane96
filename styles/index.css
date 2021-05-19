@@ -162,6 +162,39 @@ color: var(--var4);
     }
     
 }
+.welcome{
+    height: 300px;
+    
+}
+.welcome-1{
+   background: url(/images/workouts.jpg);
+}
+.welcome-2{
+   background: url(/images/diet.jpg);
+}
+.welcome-3{
+   background: url(/images/about-me.jpg);
+}
+.welcome-1, .welcome-2 , .welcome-3{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 10px 20px;
+    border-radius: 1px;
+}
+.welcome-button{
+    border-radius: 3rem;
+    border: 2px solid var(--var2);
+    background: none;
+    color: var(--var3);
+
+    
+}
+.welcome-button:hover{
+    background-color: var(--var2);
+    transition: 0.6s;
+}
 
 .container-1{
     max-width: 1200px;
@@ -201,7 +234,7 @@ footer{
 .subscribe{
     background-color: var(--var1);
     padding: 20px 20px;
-     
+    margin-top: 50rem;
     
 }
 .subscribe-2{
@@ -483,4 +516,17 @@ box-shadow: 1px 1px 4px var(--var2);
     width: 40%;
     height: 190px;
     
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 800px){
+    .welcome{
+        display: flex;
+    }
+    .welcome-1, .welcome-2 ,.welcome-3{
+        width: 100%;
+        margin: 30px;
+    }
 }
