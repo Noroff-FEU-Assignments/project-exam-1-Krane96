@@ -132,6 +132,7 @@ color: var(--var4);
         line-height: normal;
         transition: 0.7s;
         margin-top: 0;
+        
     }
     .menu a{
         display: block;
@@ -162,10 +163,7 @@ color: var(--var4);
     }
     
 }
-.welcome{
-    
-    
-}
+
 .welcome img{
     display: block;
     position: relative;
@@ -175,7 +173,7 @@ color: var(--var4);
 }
 
 .welcome-1, .welcome-2 , .welcome-3{
-    margin: 40px 20px;
+    margin: 10px 20px;
     border-radius: 1px;
     position: relative;
 }
