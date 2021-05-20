@@ -352,16 +352,15 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     height: 40rem;
-    width: 100%;
-    padding: 10px 10px;
-    overflow: hidden;
+    padding-top: 10px;
+    
     
 }
 
 
 .form-container{    
     max-width: 300px;
-    width: 100%;
+    
     background: var(--var1);
     padding: 20px;
     border-radius: 2px;
@@ -558,4 +557,15 @@ box-shadow: 1px 1px 4px var(--var2);
         width: 100%;
         margin: 30px;
     }
+}
+
+
+@media screen and (max-width: 350px){
+    .form-container{
+        max-width: 250px;
+    }
+    .form-container h2{
+        font-size: 1em;
+    }
+
 }
