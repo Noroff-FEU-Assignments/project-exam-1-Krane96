@@ -175,7 +175,7 @@ color: var(--var4);
 }
 
 .welcome-1, .welcome-2 , .welcome-3{
-    margin: 10px 20px;
+    margin-top: 10px;
     border-radius: 1px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -189,10 +189,6 @@ color: var(--var4);
     border: 2px solid var(--var2);
     background: none;
     color: var(--var3);
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-
    
     
 }
@@ -289,6 +285,7 @@ footer{
     flex-direction: column;
     text-align: center;
     margin-top: 30px;
+
     
 }
 .social-media{
@@ -315,7 +312,7 @@ footer{
 }
 .copyright-footer{
     background: var(--var1);
-    width: 100vw;
+    width: 100%;
     padding: 1px 0;
     text-align: center;
 }
