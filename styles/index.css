@@ -347,12 +347,17 @@ footer{
 
 /* Contact HTML*/
 .container-contact{
-    background-image: url(/images/anastase-maragos-7P5AOnw6cWQ-unsplash\ \(1\).jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url(/images/anastase-maragos-7P5AOnw6cWQ-unsplash\ \(1\).jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 40rem;
+    width: 100%;
+    padding: 10px 10px;
+    overflow: hidden;
+    
 }
+
 
 .form-container{    
     max-width: 300px;
