@@ -60,11 +60,7 @@ if(name.length <5){
     return false;
 }
 
-if(email.match(pattern)){
-    text = "Invalid e-mail address";
-    errorMsg.innerHTML = text;
-    return false;
-}
+
 
 
 if(subject.length <15){
