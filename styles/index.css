@@ -179,8 +179,9 @@ color: var(--var4);
     border-radius: 1px;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 90%;
     height: 20rem;
+    margin: 10px 20px;
 }
 
 
