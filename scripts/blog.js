@@ -20,7 +20,8 @@ function displaySpecificPost (data) {
      
      <h1>${data.title.rendered}</h1>
      ${data.content.rendered}
-     
+    
+     <a href="blog.html">&#10094; Back</a>
 
 
 
