@@ -19,7 +19,7 @@ function displaySpecificPost (data) {
      <div class="blog-post-container">
      
      <h1>${data.title.rendered}</h1>
-     <img>${data.content.rendered}</img>
+     ${data.content.rendered}
      
 
 
