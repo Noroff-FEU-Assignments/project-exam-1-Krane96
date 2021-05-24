@@ -20,7 +20,7 @@ getBlogPosts();
 function createHTML(blogPosts){
     blogPosts.forEach(function(post){
         posts.innerHTML += `
-        <div class="blogPosts">
+        <div class="blogPost">
             <a href="specificPost.html?id=${post.id}">
             <h1>${post.title.rendered}</h1>
             </a>
