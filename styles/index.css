@@ -170,13 +170,13 @@ color: var(--var4);
 }
 
 .welcome-1{
-    background-image: url(/images/about-me.jpg);
+    background-image: url(/images/workouts.jpg);
 }
 .welcome-2{
     background-image: url(/images/diet.jpg);
 }
 .welcome-3{
-    background-image: url(/images/workouts.jpg);
+    background-image: url(/images/about-me.jpg);
 }
 
 .welcome-1, .welcome-2 , .welcome-3{
@@ -209,7 +209,7 @@ color: var(--var4);
     background-color: var(--var2);
     transition: 0.4s;
     color: var(--var1);
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .container-1{
@@ -217,24 +217,11 @@ color: var(--var4);
     margin: 0 auto;
 }
 /* Carousel */
-.carousel-container{
- width: 90%;
- margin: 0 auto;
- overflow: hidden;
-}
-.carousel-slide{
- display: flex;
- width: 100%;
- height: 500px;
- max-width: 100%;
+.wp-block-image ul, .wp-block-image p{
+    display: none;
 }
 
-.carousel-slide ul{
-    display: none;
-}
-.carousel-slide p{
-    display: none;
-}
+
 
 
 
@@ -257,6 +244,10 @@ footer{
     width: 9rem;
     align-content: center;
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    
     
 }
 
@@ -269,6 +260,7 @@ footer{
     border-radius: 1px;
     margin-left: 0;
     margin-top: 0;
+    
     
     
 }
@@ -464,9 +456,11 @@ box-shadow: 1px 1px 4px var(--var2);
     font-size: 0.8em;
     float: right;
     padding: 0 10px;
-    opacity: 0.85;
     margin-bottom: -10px;
     
+}
+.blog-post-container{
+    padding: 5px;
 }
 
 .blog-post-container img{
@@ -475,19 +469,26 @@ box-shadow: 1px 1px 4px var(--var2);
 }
 .blog-post-container p{
     padding: 10px 10px;
+    margin-top: 0;
 }
 
 
 #specific-blog-post{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 #specific-blog-post h1{
     text-align: center;
+    font-family: luckiest guy;
+    font-size: 1.6em;
+    margin: 0 auto;
+    max-width: 95%;
+    letter-spacing: 1px;
 }
 .wp-block-image{
     margin: 0 auto;
     max-width: 95%;
+   
     
 }
 
@@ -495,8 +496,9 @@ box-shadow: 1px 1px 4px var(--var2);
 
 
 
+
 /* About */
-.container-1 img{
+.obiwan img{
     max-width: 95%;
     margin: 15px auto;
     align-items: center;
