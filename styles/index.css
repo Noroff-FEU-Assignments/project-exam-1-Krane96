@@ -338,16 +338,7 @@ footer{
 
 
 /* Contact HTML*/
-.container-contact{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)), url(/images/anastase-maragos-7P5AOnw6cWQ-unsplash\ \(1\).jpg) ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40rem;
-    padding-top: 10px;
-    
-    
-}
+
 
 
 .form-container{    
@@ -498,11 +489,14 @@ box-shadow: 1px 1px 4px var(--var2);
 
 
 /* About */
-.obiwan img{
+.obiwan{
     max-width: 95%;
     margin: 15px auto;
     align-items: center;
     display: flex;
+    border-radius: 50%;
+    width: 40%;
+    height: 190px;
 }
 .container-1 h1{
     margin: 15px;
@@ -540,13 +534,9 @@ box-shadow: 1px 1px 4px var(--var2);
 .about p{
     padding: 20px;
     margin: 0 auto;
+    padding-top: 0;
 }
-.about img{
-    border-radius: 50%;
-    width: 40%;
-    height: 190px;
-    
-}
+
 
 
 /* Desktop */
