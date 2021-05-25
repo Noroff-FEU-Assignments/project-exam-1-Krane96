@@ -8,8 +8,6 @@ html{
     height: 100%;
 }
 
-
-
 h1{
     font-size: 1.4em;
 }
@@ -39,11 +37,11 @@ letter-spacing: 1px;
 cursor: pointer;
 font-weight: bold;
 font-family: 'Noto Sans JP', sans-serif;
-border-bottom: 3px solid rgba(155, 110, 27, 0.623);
-border-right: 2px solid rgba(155, 110, 27, 0.623);
+border-bottom: 3px solid rgba(151, 99, 2, 0.534);
+
 
 }
-
+/* Menu */
 header{
     padding: 0 20px;
     height: 80px;
@@ -74,12 +72,16 @@ header{
 .menu a{
     color: var(--var3);
     text-transform: uppercase;
-    text-decoration: none;
-    padding: 0 10px;
+    padding: 5px 10px;
     transition: 0.4s;
     letter-spacing: 2px;
-    
+    text-decoration: none;
 }
+.current{
+    border-bottom: 2px solid var(--var3);
+
+}
+
 .show-menu-button{
     float: right;
 }
@@ -94,7 +96,7 @@ header{
     display: none;
 }
 .menu a:hover, .show-menu-button:hover, .hide-menu-button:hover{
-color: var(--var4);
+color: var(--var2);
 }
 
 #chk{
@@ -114,6 +116,7 @@ color: var(--var4);
 .logo-mobile{
     display: none;
 }
+
 
 @media screen and (max-width: 750px){
     .show-menu-button, .hide-menu-button{
@@ -136,7 +139,9 @@ color: var(--var4);
     }
     .menu a{
         display: block;
-        padding: 20px;
+        padding: 10px;
+        max-width: 150px;
+        margin: 10px auto;
     }
     .hide-menu-button{
         position: absolute;
@@ -196,12 +201,9 @@ color: var(--var4);
     border: 2px solid var(--var2);
     background: none;
     color: var(--var3);
-    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    width: 150px;
+   
    
     
 }
@@ -241,7 +243,7 @@ footer{
 .subscribe{
     background-color: var(--var1);
     padding: 20px 20px;
-    margin-top: 50rem;
+    margin-top: 30rem;
     
 }
 .subscribe-2{
@@ -295,7 +297,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
 
     
 }
@@ -590,14 +592,41 @@ box-shadow: 1px 1px 4px var(--var2);
         height: 320px;
         width: 40%;
     }
+    .subscribe-button{
+        padding: 10px 40px;
+    }
+    
 }
 
 
 
-/* Laptop 1350px */
-@media screen and (min-width: 1350px){
+/* Laptop 1200px */
+@media screen and (min-width: 1200px){
     .container-1 h1{
         font-size: 1.6em;
+        margin-left: 0;
+      }
+      .obiwan{
+          width: 30%;
+      }
+      .about{
+          max-width: 900px;
+      }
+      .about h2{
+          font-size: 1.8em;
+      }
+      .about h3{
+          font-size: 1.2em;
+      }
+
+      .subscribe-button{
+          padding: 10px 60px;
+      }
+      .subscribe-3 input{
+          min-width: 200px;
+      }
+      .subscribe-2 h2{
+          padding: 8px 45px;
       }
 }
 
@@ -606,6 +635,8 @@ box-shadow: 1px 1px 4px var(--var2);
 
 /* Desktop 1920px */
 
+
+/* Small phones etc*/
 
 @media screen and (max-width: 350px){
     .form-container{
