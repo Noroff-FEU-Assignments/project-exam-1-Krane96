@@ -203,9 +203,6 @@ color: var(--var2);
     color: var(--var3);
     top: 50%;
     left: 50%;
-   
-   
-    
 }
 .welcome-button:hover{
     background-color: var(--var2);
@@ -223,21 +220,13 @@ color: var(--var2);
     display: none;
 }
 
-
-
-
-
-
-
-
-
 /* Footer */
 
 footer{
     background: var(--var7);
     color: var(--var3);
     width: 100%;
-    margin-top: 40rem;
+    margin-top: 0;
     
 }
 .subscribe{
@@ -429,7 +418,7 @@ box-shadow: 1px 1px 4px var(--var2);
     margin-top: 50px;
 }
 .blogPosts{
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -460,7 +449,7 @@ box-shadow: 1px 1px 4px var(--var2);
 }
 .author{
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 0.8em;
     float: right;
     padding: 0 10px;
@@ -497,7 +486,7 @@ box-shadow: 1px 1px 4px var(--var2);
 }
 .wp-block-image{
     margin: 0 auto;
-    max-width: 95%;
+    width: 95%;
    
     
 }
@@ -598,6 +587,38 @@ box-shadow: 1px 1px 4px var(--var2);
     .subscribe-button{
         padding: 10px 40px;
     }
+    .form-container {
+        max-width: 400px;
+        min-height: 400px;
+    }
+    .form-container textarea{
+        height: 120px;
+
+    }
+    .blogPosts{
+        max-width: 1200px;
+    }
+    .blogPosts h1{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        max-width: 400px;
+        font-size: 1.5em;
+        text-align: center;
+
+    }
+    .author{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        width: 150px;
+        left: 50%;
+        font-size: 1em;
+        
+    }
+    .wp-block-image {
+        max-width: 60%;
+    }
+    
     
 }
 
@@ -632,6 +653,17 @@ box-shadow: 1px 1px 4px var(--var2);
       .subscribe-2 h2{
           padding: 8px 45px;
       }
+      .form-container{
+          max-width: 600px;
+      }
+      .wp-block-image {
+          max-width: 60%;
+      }
+      .blogPosts h1{
+          font-size: 1.7em;
+          max-width: 600px;
+      }
+      
 }
 
 
@@ -655,6 +687,9 @@ box-shadow: 1px 1px 4px var(--var2);
     }
     .about h3{
         font-size: 1em;
+    }
+    .blogPosts h1{
+        font-size: 1.1em;
     }
 
 }
