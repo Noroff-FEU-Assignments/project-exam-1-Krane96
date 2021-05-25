@@ -522,8 +522,8 @@ box-shadow: 1px 1px 4px var(--var2);
     align-items: center;
     display: flex;
     border-radius: 50%;
-    width: 50%;
-    height: 250px;
+    width: 40%;
+    height: 200px;
 }
 .container-1 h1{
     margin: 15px;
@@ -578,19 +578,22 @@ box-shadow: 1px 1px 4px var(--var2);
     .welcome{
         display: flex;
     }
-    .welcome-1, .welcome-2 ,.welcome-3{
-        width: 100%;
-        margin: 30px;
-    }
+    
     .container-1 h1{
       font-size: 1.5em;
     }
     .about{
         max-width: 650px;
     }
+    .about h2{
+        font-size: 1.7em;
+    }
+    .about h3{
+        font-size: 1.2em;
+    }
     .obiwan{
-        height: 320px;
-        width: 40%;
+        height: 270px;
+        width: 30%;
     }
     .subscribe-button{
         padding: 10px 40px;
@@ -608,6 +611,7 @@ box-shadow: 1px 1px 4px var(--var2);
       }
       .obiwan{
           width: 30%;
+          height: 350px;
       }
       .about{
           max-width: 900px;
@@ -645,9 +649,7 @@ box-shadow: 1px 1px 4px var(--var2);
     .form-container h2{
         font-size: 1em;
     }
-    .obiwan{
-        height: 220px;
-    }
+    
     .about h2{
         font-size: 1.4em;
     }
