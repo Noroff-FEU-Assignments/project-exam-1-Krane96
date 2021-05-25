@@ -48,26 +48,32 @@
     <h1>Welcome to my blog</h1>
     <div class="welcome">
         <div class="welcome-1">
-            <button class="welcome-button">Blog</button>
+           <a href="/html/blog.html"> <button class="welcome-button">Blog</button></a>
         </div>
         <div class="welcome-2">
-            <button class="welcome-button">Nutrition</button>
+           <a href="/html/contact.html"><button class="welcome-button">Nutrition</button></a>
         </div>
         <div class="welcome-3">
-            <button class="welcome-button">About me</button>
+           <a href="/html/about.html"><button class="welcome-button">About me</button></a>
         </div>
     </div>
 
     <h1 class="carousel-header">Latest posts</h1>
     
     <div class="carousel">
-        <button class="carousel__button carousel__button--left"></button>
+        <button class="carousel__button carousel__button--left">prev</button>
         <div class="carousel__track-container">
             <ul class="carousel__track">
                 
             </ul>
         </div>
-        <buttonclass="carousel__button carousel__button--right"></button>
+        <button class="carousel__button carousel__button--right">next</button>
+    </div>
+
+    <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
     </div>
 
 </div>
@@ -81,7 +87,7 @@
     </div>
         <div class="subscribe-3">
         <input type="text" placeholder="Your e-mail address" id="email">
-        <button>Subscribe</button>
+        <button class="subscribe-button">Subscribe</button>
     </div>
     </div>
     <div class="footer-container">
