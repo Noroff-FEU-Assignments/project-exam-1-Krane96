@@ -115,7 +115,7 @@ color: var(--var4);
     display: none;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 750px){
     .show-menu-button, .hide-menu-button{
         display: block;
         font-size: 1.6em;
@@ -221,64 +221,7 @@ color: var(--var4);
     display: none;
 }
 
-.carousel{
-    position: relative;
-    height: 600px;
-    width: 90%;
-    margin: 0 auto;
-}
-.carousel__images{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.carousel__track-container {
-    background: var(--var2);
-    height: 100%;
-    position: relative;
-}
-.carousel__track{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-.carousel__slide{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-.carousel__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.carousel__button--left{
-    left: -50px;
 
-}
-.carousel__button--right{
-    right: -50px;
-
-}
-.carousel__nav{
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    margin: 0 15px;
-}
-.carousel__indicator{
-    border: 0;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: var(--var1);
-    margin: 0 12px;
-    background: rgba(0, 0, 0, 0.3);
-}
-.carousel__indicator.current-slide{
-    background: rgba(0, 0, 0, 0.8);
-}
 
 
 
@@ -578,7 +521,7 @@ box-shadow: 1px 1px 4px var(--var2);
     display: flex;
     border-radius: 50%;
     width: 50%;
-    height: 190px;
+    height: 250px;
 }
 .container-1 h1{
     margin: 15px;
@@ -618,12 +561,18 @@ box-shadow: 1px 1px 4px var(--var2);
     margin: 0 auto;
     padding-top: 0;
 }
+.about h2{
+    font-size: 1.6em;
+}
+.about h3{
+    font-size: 1.2em;
+}
 
 
 
-/* Desktop */
+/* Tablet 750px */
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 750px){
     .welcome{
         display: flex;
     }
@@ -631,7 +580,31 @@ box-shadow: 1px 1px 4px var(--var2);
         width: 100%;
         margin: 30px;
     }
+    .container-1 h1{
+      font-size: 1.5em;
+    }
+    .about{
+        max-width: 650px;
+    }
+    .obiwan{
+        height: 320px;
+        width: 40%;
+    }
 }
+
+
+
+/* Laptop 1350px */
+@media screen and (min-width: 1350px){
+    .container-1 h1{
+        font-size: 1.6em;
+      }
+}
+
+
+
+
+/* Desktop 1920px */
 
 
 @media screen and (max-width: 350px){
@@ -639,6 +612,15 @@ box-shadow: 1px 1px 4px var(--var2);
         max-width: 250px;
     }
     .form-container h2{
+        font-size: 1em;
+    }
+    .obiwan{
+        height: 220px;
+    }
+    .about h2{
+        font-size: 1.4em;
+    }
+    .about h3{
         font-size: 1em;
     }
 
