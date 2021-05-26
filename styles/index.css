@@ -136,6 +136,7 @@ color: var(--var2);
         transition: 0.7s;
         margin-top: 0;
         
+        
     }
     .menu a{
         display: block;
@@ -150,8 +151,8 @@ color: var(--var2);
     }
     #chk:checked ~ .menu{
         right: 0;
-
     }
+    
     
     .copyright-menu{
         display: block;

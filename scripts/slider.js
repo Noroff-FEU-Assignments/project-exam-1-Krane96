@@ -60,3 +60,17 @@ function showSlides(n){
     
 }
 
+const show = document.querySelector('.show-menu-button');
+const welcomeSlider = document.querySelector('.welcome-slider');
+const hide = document.querySelector('.hide-menu-button');
+
+show.addEventListener('click', e => {
+   welcomeSlider.style.display = "none";
+})
+
+hide.addEventListener('click', e => {
+    welcomeSlider.style.display = "block";
+})
+
+
+
