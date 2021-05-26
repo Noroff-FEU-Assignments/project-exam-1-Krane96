@@ -230,10 +230,9 @@ footer{
     
 }
 .subscribe{
-    background-color: var(--var1);
-    padding: 20px 20px;
-    margin-top: 30rem;
-    
+    background-color: rgba(0, 0, 0, 0.699);
+    padding: 20px 20px;  
+    margin-top: 5rem; 
 }
 .subscribe-2{
     width: 9rem;
@@ -286,7 +285,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
 
     
 }
@@ -649,12 +648,15 @@ box-shadow: 1px 1px 4px var(--var2);
       }
       .subscribe-3 input{
           min-width: 200px;
+          font-size: 1em;
       }
       .subscribe-2 h2{
           padding: 8px 45px;
       }
       .form-container{
           max-width: 600px;
+          padding: 40px;
+          margin-top: 200px;
       }
       .wp-block-image {
           max-width: 60%;
