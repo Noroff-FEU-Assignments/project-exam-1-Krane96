@@ -477,7 +477,7 @@ box-shadow: 1px 1px 4px var(--var2);
     font-family: luckiest guy;
     padding: 10px 2px;
     margin-bottom: 10px;
-    border-bottom: 2px solid var(--var7);
+    text-align: center;
   
 }
 .container-1 h2{
@@ -575,8 +575,9 @@ box-shadow: 1px 1px 4px var(--var2);
         max-width: 60%;
     }
     .slide img{
-       
+        max-height: 600px;
     }
+   
     
 }
 
@@ -586,7 +587,7 @@ box-shadow: 1px 1px 4px var(--var2);
 @media screen and (min-width: 1200px){
     .container-1 h1{
         font-size: 1.6em;
-        margin-left: 0;
+        margin: 15px 0;
       }
       .obiwan{
           width: 30%;
@@ -655,7 +656,9 @@ box-shadow: 1px 1px 4px var(--var2);
     .blogPosts h1{
         font-size: 1.1em;
     }
-
+    .slide img{
+        max-height: 200px;
+     }
 }
 
 
@@ -679,12 +682,13 @@ box-shadow: 1px 1px 4px var(--var2);
     margin: 0 auto;
     position: relative;
     color: var(--var3);
-    font-size: 1.6em; 
+    font-size: 1.6em;
+    width: 100%; 
 }
 .slide img{
     width: 100%;
     vertical-align: middle;
-    height: auto;
+    height: 500px;
     
 }
 .prevBtn, .nextBtn{
@@ -732,3 +736,13 @@ box-shadow: 1px 1px 4px var(--var2);
 }
 
 
+@media screen and (max-width: 800px){
+    .slide img{
+        max-height: 300px;
+    }
+}
+@media screen and (max-width: 500px){
+    .slide img{
+        max-height: 200px;
+    }
+}
