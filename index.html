@@ -45,19 +45,36 @@
     </header>
 </section>
 <div class="container-1">
-    <h1>Welcome to my blog</h1>
-    <div class="welcome">
-        <div class="welcome-1">
-           <a href="/html/blog.html"> <button class="welcome-button">Blog</button></a>
+    <div class="welcome-slider">
+        <div class="slide fade">
+            <img src="/images/welcome-1.jpg" alt="">
+            <div class="image-text">
+             <a href="/html/blog.html"><button class="welcome-button">Blog</button></a>  
+            </div>
         </div>
-        <div class="welcome-2">
-           <a href="/html/contact.html"><button class="welcome-button">Nutrition</button></a>
+        <div class="slide fade">
+            <img src="/images/welcome-2.jpg" alt="">
+            <div class="image-text">
+              <a href="/html/about.html"><button class="welcome-button">About</button></a>
+            </div>
         </div>
-        <div class="welcome-3">
-           <a href="/html/about.html"><button class="welcome-button">About me</button></a>
+        <div class="slide fade">
+            <img src="/images/welcome-3.jpg" alt="">
+            <div class="image-text">
+              <a href="/html/contact.html"><button class="welcome-button">Contact</button></a>  
+            </div>
         </div>
-    </div>
 
+        <a class="prevBtn" onclick="plusSlides(-1)">&#10094</a>
+        <a class="nextBtn" onclick="plusSlides(1)">&#10095</a>
+        
+    </div>
+    
+    <h1>Welcome to my blog</h1>
+    
+    
+    
+    
     <h1 class="carousel-header">Latest posts</h1>
     
     

@@ -170,46 +170,6 @@ color: var(--var2);
     }
     
 }
-.welcome{
-    margin-top: 15px;
-}
-
-.welcome-1{
-    background-image: url(/images/workouts.jpg);
-}
-.welcome-2{
-    background-image: url(/images/diet.jpg);
-}
-.welcome-3{
-    background-image: url(/images/about-me.jpg);
-}
-
-.welcome-1, .welcome-2 , .welcome-3{
-    margin-top: 10px;
-    border-radius: 1px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 90%;
-    height: 20rem;
-    margin: 10px 15px;
-}
-
-
-.welcome-button{
-    border-radius: 2rem;
-    border: 2px solid var(--var2);
-    background: none;
-    color: var(--var3);
-    top: 50%;
-    left: 50%;
-}
-.welcome-button:hover{
-    background-color: var(--var2);
-    transition: 0.4s;
-    color: var(--var1);
-    opacity: 0.9;
-}
 
 .container-1{
     max-width: 1200px;
@@ -232,7 +192,7 @@ footer{
 .subscribe{
     background-color: rgba(0, 0, 0, 0.699);
     padding: 20px 20px;  
-    margin-top: 5rem; 
+    margin-top: 15rem; 
 }
 .subscribe-2{
     width: 9rem;
@@ -285,9 +245,6 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 10px;
-
-    
 }
 .social-media{
     list-style: none;
@@ -617,7 +574,9 @@ box-shadow: 1px 1px 4px var(--var2);
     .wp-block-image {
         max-width: 60%;
     }
-    
+    .slide img{
+       
+    }
     
 }
 
@@ -656,7 +615,10 @@ box-shadow: 1px 1px 4px var(--var2);
       .form-container{
           max-width: 600px;
           padding: 40px;
-          margin-top: 200px;
+          margin: 100px auto;
+      }
+      .form-container h2{
+          font-size: 1.6em;
       }
       .wp-block-image {
           max-width: 60%;
@@ -695,3 +657,78 @@ box-shadow: 1px 1px 4px var(--var2);
     }
 
 }
+
+
+.loader{
+    background-image: url(/images/799.gif);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
+    text-align: center;
+    background-size: 100px;
+}
+
+
+
+.slide{
+    display: none;
+
+}
+.welcome-slider{
+    margin: 0 auto;
+    position: relative;
+    color: var(--var3);
+    font-size: 1.6em; 
+}
+.slide img{
+    width: 100%;
+    vertical-align: middle;
+    height: auto;
+    
+}
+.prevBtn, .nextBtn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.8em;
+    padding: 15px;
+
+
+}
+.nextBtn{
+    right: 0;
+    margin-right: 10px;
+}
+.prevBtn {
+    margin-left: 10px;
+}
+.welcome-button{
+    color: var(--var3);
+    border-radius: 2rem;
+    border: 2px solid var(--var2);
+    background: none;
+    font-size: 0.8em;
+    padding: 5px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    
+}
+.welcome-button:hover{
+    background-color: var(--var2);
+    transition: 0.4s;
+    color: var(--var1);
+    opacity: 0.9;
+}
+.image-text{
+    width: 100%;   
+    position: absolute;  
+    bottom: 50%;
+    text-align: center;
+    left: 0;
+}
+
+

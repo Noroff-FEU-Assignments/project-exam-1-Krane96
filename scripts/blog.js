@@ -17,7 +17,7 @@ function displaySpecificPost (data) {
     
     let content = `
      <div class="blog-post-container">
-     
+      
      <h1>${data.title.rendered}</h1>
      ${data.content.rendered}
     
