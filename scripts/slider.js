@@ -60,6 +60,8 @@ function showSlides(n){
     
 }
 
+
+// fixing so the slider dont show on top of the mobile menu //
 const show = document.querySelector('.show-menu-button');
 const welcomeSlider = document.querySelector('.welcome-slider');
 const hide = document.querySelector('.hide-menu-button');
