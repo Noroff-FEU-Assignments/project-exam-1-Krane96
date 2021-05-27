@@ -436,7 +436,6 @@ box-shadow: 1px 1px 4px var(--var2);
 #specific-blog-post h1{
     text-align: center;
     font-family: luckiest guy;
-    font-size: 1.3em;
     margin: 20px auto;
     max-width: 95%;
     letter-spacing: 1px;
@@ -642,6 +641,17 @@ box-shadow: 1px 1px 4px var(--var2);
           margin-right: 130px;
           margin-bottom: -30px;
       }
+      .blog-post-container{
+          width: 80%;
+          margin: 0 auto;
+      }
+      .blog-post-container p{
+          max-width: 80%;
+          margin: 0 auto;
+          
+      }
+
+
       
       
 }
