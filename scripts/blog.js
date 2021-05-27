@@ -45,7 +45,6 @@ function biggerImg(){
 function resetImg() {
     bigImg = document.querySelector('.wp-block-image')
     bigImg.style.transform = "scale(1)";
-    bigImg.style.transition = "transform 0.25s ease";
 }
 document.body.addEventListener('click', resetImg, true);
 

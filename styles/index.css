@@ -552,9 +552,7 @@ box-shadow: 1px 1px 4px var(--var2);
         height: 120px;
 
     }
-    .blogPosts{
-     
-    }
+
     .blogPosts h1{
         margin: 0 auto;
         margin-bottom: 20px;
@@ -563,6 +561,7 @@ box-shadow: 1px 1px 4px var(--var2);
         text-align: center;
 
     }
+
     .author{
         position: absolute;
         transform: translate(-50%, -50%);
@@ -575,6 +574,10 @@ box-shadow: 1px 1px 4px var(--var2);
     
     .slide img{
         max-height: 600px;
+    }
+    #specific-blog-post h1{
+        font-size: 1.6em;
+        letter-spacing: 1px;
     }
    
     
@@ -647,9 +650,13 @@ box-shadow: 1px 1px 4px var(--var2);
           margin: 0 auto;
       }
       .blog-post-container p{
-          max-width: 80%;
+          max-width: 70%;
           margin: 0 auto;
           
+      }
+      #specific-blog-post h1{
+          font-size: 1.8em;
+          letter-spacing: 1px;
       }
 
     
