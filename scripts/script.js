@@ -40,7 +40,7 @@ function createHTML(blogPosts){
 };
 const loader = document.querySelector('.loader')
 
-window.addEventListener ("load", function() {
+window.addEventListener ("load", function getBlogPosts() {
     loader.style.display = 'none';
     
 });
