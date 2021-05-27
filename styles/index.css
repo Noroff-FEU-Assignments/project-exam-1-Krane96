@@ -76,10 +76,10 @@ header{
     transition: 0.4s;
     letter-spacing: 2px;
     text-decoration: none;
+    text-decoration: none;
 }
 .current{
-    border-bottom: 2px solid var(--var3);
-
+    border-bottom: 2px solid var(--var2);
 }
 
 .show-menu-button{
@@ -553,7 +553,7 @@ box-shadow: 1px 1px 4px var(--var2);
 
     }
     .blogPosts{
-        max-width: 1200px;
+     
     }
     .blogPosts h1{
         margin: 0 auto;
@@ -572,9 +572,7 @@ box-shadow: 1px 1px 4px var(--var2);
         font-size: 1em;
         
     }
-    .wp-block-image {
-        max-width: 60%;
-    }
+    
     .slide img{
         max-height: 600px;
     }
@@ -623,12 +621,28 @@ box-shadow: 1px 1px 4px var(--var2);
           font-size: 1.6em;
       }
       .wp-block-image {
-          max-width: 60%;
+          max-width: 70%;
       }
       .blogPosts h1{
           font-size: 1.7em;
           max-width: 600px;
       }
+      .blogPosts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-width: 1200px;
+      }
+      .blogPosts img{
+         height: auto;
+         
+          
+      }
+      .author{
+          position: unset;
+          margin-right: 130px;
+          margin-bottom: -30px;
+      }
+      
       
 }
 
@@ -656,6 +670,7 @@ box-shadow: 1px 1px 4px var(--var2);
     }
     .blogPosts h1{
         font-size: 1.1em;
+        max-width: 150px;
     }
     .slide img{
         max-height: 200px;
@@ -701,6 +716,10 @@ box-shadow: 1px 1px 4px var(--var2);
 
 
 }
+.prevBtn:hover, .nextBtn:hover{
+    transition: 0.7s;
+    color: var(--var2);
+}
 .nextBtn{
     right: 0;
     margin-right: 10px;
@@ -713,11 +732,10 @@ box-shadow: 1px 1px 4px var(--var2);
     border-radius: 2rem;
     border: 2px solid var(--var2);
     background: none;
-    font-size: 0.8em;
-    padding: 5px 25px;
+    font-size: 1.1em;
+    padding: 5px 55px;
     cursor: pointer;
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 1px;
 
     
@@ -731,7 +749,7 @@ box-shadow: 1px 1px 4px var(--var2);
 .image-text{
     width: 100%;   
     position: absolute;  
-    bottom: 50%;
+    bottom: 40%;
     text-align: center;
     left: 0;
 }
@@ -741,9 +759,36 @@ box-shadow: 1px 1px 4px var(--var2);
     .slide img{
         max-height: 300px;
     }
+    .image-text{
+        bottom: 30%;
+        font-size: 0.7em;
+    }
 }
 @media screen and (max-width: 500px){
     .slide img{
         max-height: 200px;
     }
+    .image-text{
+        bottom: 20%;
+        font-size: 0.5em;
+    }
+}
+
+
+
+
+.carousel-slider ul, .carousel-slider p{
+    display: none;
+}
+.carousel-slider{
+    width: 100%;
+    
+}
+.carousel-slide{
+    width: 100%;
+    overflow: hidden;
+    
+}
+.carousel-slider img{
+    width: 100%;
 }

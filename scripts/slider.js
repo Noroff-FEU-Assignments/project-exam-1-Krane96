@@ -1,6 +1,6 @@
 
 const url = "https://www.martinlk.no/wp-json/wp/v2/posts";
-const latestPosts = document.querySelector(".carousel__track");
+const latestPosts = document.querySelector(".carousel-slide");
 
 async function makeSlider(){
     try{
@@ -23,7 +23,7 @@ function createHTML(carouselSlider){
         
             
             
-           <li class="carousel__slide current-slide">${post.content.rendered}</li>
+           <div class="carousel-slider">${post.content.rendered}</div>
             
 
             
@@ -36,9 +36,10 @@ function createHTML(carouselSlider){
     })
 
 };
+
 // slider
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -48,9 +49,8 @@ function currentSlides(n) {
     showSlides(slideIndex = n);
 }
 function showSlides(n){
-    var i;
-    var slides = document.querySelectorAll('.slide')
-    var dots = document.querySelectorAll('.dot');
+    let i;
+    const slides = document.querySelectorAll('.slide')
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
@@ -62,6 +62,7 @@ function showSlides(n){
 
 
 // fixing so the slider dont show on top of the mobile menu //
+
 const show = document.querySelector('.show-menu-button');
 const welcomeSlider = document.querySelector('.welcome-slider');
 const hide = document.querySelector('.hide-menu-button');
@@ -72,7 +73,7 @@ show.addEventListener('click', e => {
 
 hide.addEventListener('click', e => {
     welcomeSlider.style.display = "block";
+    
 })
-
 
 
