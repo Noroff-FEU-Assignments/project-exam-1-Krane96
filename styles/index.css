@@ -415,6 +415,7 @@ box-shadow: 1px 1px 4px var(--var2);
 }
 .blog-post-container{
     padding: 5px;
+    overflow: hidden;
 }
 
 .blog-post-container img{
@@ -443,7 +444,6 @@ box-shadow: 1px 1px 4px var(--var2);
 .wp-block-image{
     margin: 0 auto;
     width: 95%;
-    overflow: hidden;
    
     
 }
