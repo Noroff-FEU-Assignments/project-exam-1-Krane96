@@ -443,6 +443,7 @@ box-shadow: 1px 1px 4px var(--var2);
 .wp-block-image{
     margin: 0 auto;
     width: 95%;
+    overflow: hidden;
    
     
 }
@@ -651,6 +652,7 @@ box-shadow: 1px 1px 4px var(--var2);
           
       }
 
+    
 
       
       

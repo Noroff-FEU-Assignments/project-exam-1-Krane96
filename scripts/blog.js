@@ -36,6 +36,7 @@ document.title =  "Blog: " +  data.title.rendered;
 
 
 // Making an image bigger when clicked
+
 function biggerImg(){
     bigImg = document.querySelector('.wp-block-image')
     bigImg.style.transform = "scale(1.8)";
@@ -47,6 +48,8 @@ function resetImg() {
     bigImg.style.transition = "transform 0.25s ease";
 }
 document.body.addEventListener('click', resetImg, true);
+
+
 
 
 
