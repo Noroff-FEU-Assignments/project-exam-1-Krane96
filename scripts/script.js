@@ -45,6 +45,7 @@ setTimeout(function(){
 }, 2000);
 
 
+
 /* Form Validation*/
 
 function validation(){

@@ -804,10 +804,7 @@ box-shadow: 1px 1px 4px var(--var2);
     
 }
 .carousel-slide{
-    width: 100%;
+    width: 90%;
+    display: flex;
     overflow: hidden;
-    
-}
-.carousel-slider img{
-    width: 100%;
 }
