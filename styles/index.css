@@ -805,6 +805,10 @@ box-shadow: 1px 1px 4px var(--var2);
     width: 100%;
     display: none;
 }
+.carousel-slide:first-of-type{
+    display: block;
+}
+
 .carousel-slide img{
     width: 100%;
     height: 250px;
@@ -844,7 +848,7 @@ box-shadow: 1px 1px 4px var(--var2);
     letter-spacing: 2px;
     width: 80%;
     left: 10%;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.507);
     border-radius: 15px;
     padding: 10px 0;
   }
