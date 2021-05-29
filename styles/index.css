@@ -850,5 +850,6 @@ box-shadow: 1px 1px 4px var(--var2);
     left: 10%;
     background-color: rgba(0, 0, 0, 0.507);
     border-radius: 15px;
-    padding: 10px 0;
+    padding: 5px 0;
+    padding-top: 10px;
   }
