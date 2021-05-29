@@ -62,7 +62,7 @@ function showSlides(n){
 // fixing so the slider dont show on top of the mobile menu //
 
 const show = document.querySelector('.show-menu-button');
-const welcomeSlider = document.querySelector('.welcome-slider');
+const welcomeSlider = document.querySelector('.carousel-slider');
 const hide = document.querySelector('.hide-menu-button');
 
 show.addEventListener('click', e => {
@@ -99,5 +99,4 @@ function showSlides(n) {
   }
   
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
