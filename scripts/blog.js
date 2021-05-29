@@ -1,58 +1,50 @@
-const queryString = window.location.search;
-const id = new URLSearchParams(queryString).get('id');
+/* Getting posts from api */
+const url = "https://www.martinlk.no/wp-json/wp/v2/posts";
+const posts = document.querySelector(".blogPosts");
 
-const url = `https://www.martinlk.no/wp-json/wp/v2/posts/${id}`;
-fetch(url)
-.then(response => response.json())
-.then(data => {
-    console.log('Success:', data);
-    displaySpecificPost(data);
-})
-.catch((error) => {
-    console.error('Error', error);
-});
+async function getBlogPosts(){
+    try{
+        const response = await fetch(url);
+        const getResults = await response.json();
+        createHTML(getResults);
+        console.log(getResults);
+    }
 
-const displayPost = document.querySelector("#specific-blog-post");
-function displaySpecificPost (data) {
-    
-    let content = `
-     <div class="blog-post-container">
-      
-     <h1>${data.title.rendered}</h1>
-     ${data.content.rendered}
-    
-     <a href="blog.html">&#10094; Back</a>
+    catch(error){
+        console.log(error);
+    }
+};
 
+getBlogPosts();
 
+function createHTML(blogPosts){
+    blogPosts.forEach(function(post){
+        posts.innerHTML += `
+        <div class="blogPost">
+        
+            <a href="specificPost.html?id=${post.id}">
+            <h1>${post.title.rendered}</h1>
+            </a>
+            <span class="author"> By Martin Lian Krane</span>
+            <a href="specificPost.html?id=${post.id}">
+            <img>${post.content.rendered}</img>
+            </a>
+            
+        </div>
+        
+        
+        
+        `;
+    })
 
-
-
-    </div>
-`
-displayPost.innerHTML = content;
-document.title =  "Blog: " +  data.title.rendered;
 };
 
 
+const loader = document.querySelector('.loader')
 
-// Making an image bigger when clicked
-
-function biggerImg(){
-    bigImg = document.querySelector('.wp-block-image')
-    bigImg.style.transform = "scale(1.8)";
-    
-}
-function resetImg() {
-    bigImg = document.querySelector('.wp-block-image')
-    bigImg.style.transform = "scale(1)";
-}
-document.body.addEventListener('click', resetImg, true);
-
-
-
-
-
-
+setTimeout(function(){
+    loader.style.display = "none"
+}, 2000);
 
 
 
