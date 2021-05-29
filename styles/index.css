@@ -125,7 +125,7 @@ color: var(--var2);
     display: none;
 }
 
-
+/*Mobile Responsive Menu */
 @media screen and (max-width: 750px){
     .show-menu-button, .hide-menu-button{
         display: block;
@@ -143,8 +143,6 @@ color: var(--var2);
         line-height: normal;
         transition: 0.7s;
         margin-top: 0;
-        
-        
     }
     .menu a{
         display: block;
@@ -160,8 +158,6 @@ color: var(--var2);
     #chk:checked ~ .menu{
         right: 0;
     }
-    
-    
     .copyright-menu{
         display: block;
     }
@@ -186,6 +182,8 @@ color: var(--var2);
     background-repeat: no-repeat;
     height: 250px;
     padding: 5px 0;
+    position: relative;
+    background-attachment: fixed;
 }
 .welcome-section h1, .welcome-section p{
     color: var(--var3);
@@ -202,7 +200,10 @@ color: var(--var2);
     border-radius: 15px;
     max-width: 90%;
     margin: 0 auto;
-    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
 }
 
 .container-1{
@@ -612,7 +613,12 @@ box-shadow: 1px 1px 4px var(--var2);
     font-size: 1.2em;
 }
 
-
+/* Big phones */
+@media screen and (min-width: 500px){
+    .welcome-text{
+        max-width: 70%;
+    }
+}
 
 /* Tablet 750px */
 
@@ -675,10 +681,29 @@ box-shadow: 1px 1px 4px var(--var2);
         font-size: 1.6em;
         letter-spacing: 1px;
     }
+    .welcome-section{
+        height: 450px;
+    }
+    .welcome-text{
+        padding-bottom: 20px;
+        max-width: 60%;
+    }
    
     
 }
-
+@media screen and (min-width: 1000px){
+    .carousel-slide img{
+        max-height: 500px;
+    }
+    .carousel-slide{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .text{
+        width: 50%;
+        left: 25%;
+    }
+}
 
 
 /* Laptop 1200px */
@@ -758,8 +783,12 @@ box-shadow: 1px 1px 4px var(--var2);
       .carousel-slide img{
           height: 600px;
       }
+      .carousel-slide{
+          width: 60%;
+      }
       .text{
-          max-width: 50%;
+          max-width: 30%;
+          left: 35%;
       }
       
     
@@ -775,6 +804,12 @@ box-shadow: 1px 1px 4px var(--var2);
 
 
 /* Small phones etc*/
+@media screen and (max-width: 630px){
+     .carousel-slide img{
+         max-height: 400px;
+     }
+     
+}
 
 @media screen and (max-width: 350px){
     .form-container{
@@ -815,72 +850,6 @@ box-shadow: 1px 1px 4px var(--var2);
 }
 
 
-
-.slide{
-    display: none;
-
-}
-.welcome-slider{
-    margin: 0 auto;
-    position: relative;
-    color: var(--var3);
-    font-size: 1.6em;
-    width: 100%; 
-}
-.slide img{
-    width: 100%;
-    vertical-align: middle;
-    height: 500px;
-    
-}
-.prevBtn, .nextBtn{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    font-size: 1.8em;
-    padding: 15px;
-
-
-}
-.prevBtn:hover, .nextBtn:hover{
-    transition: 0.7s;
-    color: var(--var2);
-}
-.nextBtn{
-    right: 0;
-    margin-right: 10px;
-}
-.prevBtn {
-    margin-left: 10px;
-}
-.welcome-button{
-    color: var(--var3);
-    border-radius: 2rem;
-    border: 2px solid var(--var2);
-    background: none;
-    font-size: 1.1em;
-    padding: 5px 55px;
-    cursor: pointer;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-    
-}
-.welcome-button:hover{
-    background-color: var(--var2);
-    transition: 0.4s;
-    color: var(--var1);
-    opacity: 0.9;
-}
-.image-text{
-    width: 100%;   
-    position: absolute;  
-    bottom: 40%;
-    text-align: center;
-    left: 0;
-}
-
-
 @media screen and (max-width: 800px){
     .carousel-slide img{
         max-height: 300px;
@@ -889,6 +858,10 @@ box-shadow: 1px 1px 4px var(--var2);
         bottom: 30%;
         font-size: 0.7em;
     }
+    .welcome-section{
+        height: 350px;
+    }
+    
 }
 @media screen and (max-width: 500px){
     .carousel-slide img{
@@ -898,6 +871,8 @@ box-shadow: 1px 1px 4px var(--var2);
         bottom: 20%;
         font-size: 0.5em;
     }
+    
+    
 
 }
 

@@ -35,17 +35,23 @@ function createHTML(carouselSlider){
 };
 
 
-// fixing so the slider dont show on top of the mobile menu //
+// fixing so elements with position or opacity show over the mobile menu //
 const show = document.querySelector('.show-menu-button');
-const welcomeSlider = document.querySelector('.carousel-slider');
 const hide = document.querySelector('.hide-menu-button');
+const welcomeSlider = document.querySelector('.welcome-section');
+const hideSlider = document.querySelector('.carousel-slider');
+
+
 
 show.addEventListener('click', e => {
    welcomeSlider.style.display = "none";
+   hideSlider.style.display = "none";
+  
 })
 
 hide.addEventListener('click', e => {
     welcomeSlider.style.display = "block";
+    hideSlider.style.display = "block";
     
 })
 
