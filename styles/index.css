@@ -119,8 +119,13 @@ color: var(--var2);
 @media screen and (max-width: 750px){
     .show-menu-button, .hide-menu-button{
         display: block;
-        font-size: 1.6em;
+        margin-right: 10px;
     }
+    .hide-menu-button{
+        font-size: 1.4em;
+        margin: 0;
+    }
+
     .menu{
         position: fixed;
         width: 100%;
@@ -159,9 +164,11 @@ color: var(--var2);
         font-size: 1.2em;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin-top: 25px;
         left: 0;
         margin-left: 30px;
+    }
+    .logo{
+        margin-left: 0;
     }
 }
 .welcome-section{
@@ -233,7 +240,7 @@ color: var(--var2);
   }
   .text {
     color: var(--var3);
-    font-size: 1.6em;
+    font-size: 1.4em;
     position: absolute;
     bottom: 30%;
     text-align: center;
@@ -679,6 +686,9 @@ box-shadow: 1px 1px 4px var(--var2);
     .next{
         right: 18%;
     }
+    .text{
+        font-size: 1.6em;
+    }
 }
 /* Laptop 1200px */
 @media screen and (min-width: 1200px){
@@ -773,6 +783,12 @@ box-shadow: 1px 1px 4px var(--var2);
         flex-direction: column;
         align-items: center;
         text-align: left;
+      }
+      .welcome-section p{
+          font-size: 1.3em;
+      }
+      .text{
+          font-size: 1.7em;
       }
 }
 /* Small fixed I had to do*/

@@ -20,13 +20,10 @@ function createHTML(carouselSlider){
     carouselSlider.forEach(function(post){
         latestPosts.innerHTML += `
         
-            
-            
            <div class="carousel-slide">${post.content.rendered}
            <a href="/html/specificPost.html?id=${post.id}">
            <div class="text">${post.title.rendered}</div>
            </a>
-           
            </div>  
         
         `;
@@ -58,27 +55,27 @@ hide.addEventListener('click', e => {
 
 
 
-// Slider //
+// Slider with inspiration from W3Schools//
 
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideNumber = 1;
+showSlides(slideNumber);
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides(slideNumber += n);
 }
 function currentSlides(n) {
-    showSlides(slideIndex = n);
+    showSlides(slideNumber = n);
 }
 
 function showSlides(n) {
     let i;
     let slides = document.querySelectorAll('.carousel-slide');
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {slideNumber = 1}
+    if (n < 1) {slideNumber = slides.length}
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
   
-  slides[slideIndex-1].style.display = "block";
+  slides[slideNumber-1].style.display = "block";
 }
 
