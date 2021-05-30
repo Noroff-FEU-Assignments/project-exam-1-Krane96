@@ -787,10 +787,7 @@ box-shadow: 1px 1px 4px var(--var2);
           right: 30%;
       }
       .blog-post-container ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
+        margin-left: 8rem;
       }
       .welcome-section p{
           font-size: 1.3em;
