@@ -917,7 +917,7 @@ box-shadow: 1px 1px 4px var(--var2);
 
   .view-more-button{
     border: 0;
-    width: 12%;
+    width: 200px;
     background: var(--var2);
     color: var(--var1);
     border-radius: 5px;
