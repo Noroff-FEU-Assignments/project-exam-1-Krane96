@@ -43,6 +43,10 @@ font-family: 'Noto Sans JP', sans-serif;
 border-bottom: 3px solid rgba(0, 0, 0, 0.4);
 border-right: 2px solid rgba(0, 0, 0, 0.4);
 }
+.subscribe-button:hover{
+  background: rgb(214, 172, 31);
+  transition: 0.4s;
+}
 /* Menu */
 header{
     padding: 0 20px;
@@ -521,7 +525,7 @@ box-shadow: 1px 1px 4px var(--var2);
 .view-more-button{
     border: 0;
     width: 200px;
-    background: var(--var1);
+    background: var(--var6);
     color: var(--var3);
     border-radius: 5px;
     text-transform: uppercase;
@@ -529,11 +533,15 @@ box-shadow: 1px 1px 4px var(--var2);
     cursor: pointer;
     font-weight: bold;
     font-family: 'Noto Sans JP', sans-serif;
-    box-shadow: 1px 1px 4px var(--var1);
+    box-shadow: 1px 1px 4px var(--var6);
     display: flex;
     margin: 5rem auto;
     padding: 10px 15px;
     justify-content: center;
+}
+.view-more-button:hover{
+    background: var(--var7);
+    transition: 0.4s;
 }
 /* About */
 .obiwan{
