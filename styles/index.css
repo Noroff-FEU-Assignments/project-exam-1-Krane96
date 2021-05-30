@@ -514,15 +514,15 @@ box-shadow: 1px 1px 4px var(--var2);
 .view-more-button{
     border: 0;
     width: 200px;
-    background: var(--var2);
-    color: var(--var1);
+    background: var(--var1);
+    color: var(--var3);
     border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
     font-weight: bold;
     font-family: 'Noto Sans JP', sans-serif;
-    box-shadow: 1px 1px 4px var(--var2);
+    box-shadow: 1px 1px 4px var(--var1);
     display: flex;
     margin: 5rem auto;
     padding: 10px 15px;
