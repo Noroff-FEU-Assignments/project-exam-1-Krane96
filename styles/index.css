@@ -7,8 +7,6 @@ body{
 html{
     height: 100%;
 }
-
-
 h1{
     font-size: 1.4em;
     margin: 15px;
@@ -19,7 +17,6 @@ h1{
     margin-bottom: 10px;
     text-align: center;
 }
-
 :root{
   --var1: #0b090a;
   --var2: #f5cb5c;
@@ -29,11 +26,9 @@ h1{
   --var6: #3E5C76;
   --var7: #495057;
 }
-
 section{
     background: var(--var1);
 }
-
 .subscribe-button{
 border: none;
 background: var(--var2);
@@ -47,7 +42,6 @@ font-weight: bold;
 font-family: 'Noto Sans JP', sans-serif;
 border-bottom: 4px solid rgba(53, 35, 2, 0.233);
 border-right: 5px solid rgba(53, 35, 2, 0.233);
-
 }
 /* Menu */
 header{
@@ -68,8 +62,6 @@ header{
     text-decoration: none;
     
 }
-
-
 .menu{
     float: right;
     line-height: 80px;
@@ -97,7 +89,6 @@ header{
 .show-menu-button i{
     line-height: 80px;
 }
-
 .show-menu-button, .hide-menu-button{
     transition: 0.4s;
     cursor: pointer;
@@ -107,7 +98,6 @@ header{
 .menu a:hover, .show-menu-button:hover, .hide-menu-button:hover{
 color: var(--var2);
 }
-
 #chk{
     position: absolute;
     visibility: hidden;
@@ -125,7 +115,6 @@ color: var(--var2);
 .logo-mobile{
     display: none;
 }
-
 /*Mobile Responsive Menu */
 @media screen and (max-width: 750px){
     .show-menu-button, .hide-menu-button{
@@ -174,7 +163,6 @@ color: var(--var2);
         left: 0;
         margin-left: 30px;
     }
-    
 }
 .welcome-section{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/images/anastase-maragos-7P5AOnw6cWQ-unsplash\ \(1\).jpg);
@@ -194,7 +182,6 @@ color: var(--var2);
     max-width: 85%;
     margin: 0 auto;
     padding-bottom: 5px;
-
 }
 .welcome-text{
     background-color: rgba(0, 0, 0, 0.486);
@@ -206,21 +193,14 @@ color: var(--var2);
     right: 0;
     top: 25%;
 }
-
 .container-1{
     max-width: 1200px;
     margin: 0 auto;
 }
 /* Carousel */
-.carousel p{
-    display: none;
-}
-
 .carousel-slider ul, .carousel-slider p{
     display: none;
 }
-
-
 .carousel-slide{
     width: 100%;
     display: none;
@@ -228,7 +208,6 @@ color: var(--var2);
 .carousel-slide:first-of-type{
     display: block;
 }
-
 .carousel-slide img{
     width: 100%;
 }
@@ -248,15 +227,10 @@ color: var(--var2);
     font-weight: bold;
     font-size: 3em;
     display: block;
-
-    
-
-    
   }
   .next{
    right: 0;
   }
-  
   .text {
     color: var(--var3);
     font-size: 1.6em;
@@ -274,16 +248,12 @@ color: var(--var2);
     padding: 5px 0;
     padding-top: 10px;
   }
-
-
 /* Footer */
-
 footer{
     background: var(--var7);
     color: var(--var3);
     width: 100%;
     margin-top: 0;
-    
 }
 .subscribe{
     background-color: rgba(0, 0, 0, 0.699);
@@ -297,10 +267,7 @@ footer{
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 10px;
-    
-    
 }
-
 .subscribe-2 h2{
     background-color: #ec4646;
     padding: 5px 15px;
@@ -310,9 +277,6 @@ footer{
     border-radius: 1px;
     margin-left: 0;
     margin-top: 0;
-    
-    
-    
 }
 .subscribe-2 h3{
     margin: 20px 10px;
@@ -328,13 +292,10 @@ footer{
     overflow: hidden;
     font-size: 0.7em;
 }
-
 .subscribe-3{
     display: flex;
     justify-content: center;
-     
 }
-
 .footer-container{
     display: flex;
     align-items: center;
@@ -356,7 +317,6 @@ footer{
 .social-media li{
     margin: 0 10px;
 }
-
 .social-media a{
     text-decoration: none;
     color: var(--var3);
@@ -384,34 +344,24 @@ footer{
     line-height: 30px;
     font-size: 1em;
 }
-
-
-
 /* Contact HTML*/
-
-
-
 .form-container{    
     max-width: 300px;
-    
     background: var(--var1);
     padding: 20px;
     border-radius: 2px;
     box-shadow:  1px 1px 5px;
     margin: 40px auto;
-    
 }
 .form-container h2{
     text-align: center;
     margin-bottom: 20px;
     color: var(--var3);
     font-size: 1.3em;
-
 }
 input:focus{
     outline: none;
 }
-
 .form-container .contact-input{
  margin-bottom: 10px;
 }
@@ -431,7 +381,6 @@ input:focus{
 ::placeholder{
     padding-left: 5px;
 }
-
 .form-container .submit-button input[type="submit"]{
 border: 0;
 width: 100%;
@@ -447,7 +396,6 @@ font-weight: bold;
 font-family: 'Noto Sans JP', sans-serif;
 box-shadow: 1px 1px 4px var(--var2);
 }
-
 .form-container #error-message{
     margin-bottom: 20px;
     padding: 0;
@@ -460,7 +408,6 @@ box-shadow: 1px 1px 4px var(--var2);
     border-radius: 2px;
     text-transform: capitalize;
 }
-
 .subscribe-2::after {
     content: '';
     border: .5rem solid transparent;
@@ -471,6 +418,19 @@ box-shadow: 1px 1px 4px var(--var2);
 }
 
 /* Blog HTML */
+.loader{
+    background-image: url(/images/799.gif);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
+    text-align: center;
+    background-size: 100px;
+    font-family: freckle face;
+    letter-spacing: 2px;
+    max-width: 250px;
+    margin: 0 auto;
+}
 .blogPost{
     margin-top: 50px;
 }
@@ -517,7 +477,6 @@ box-shadow: 1px 1px 4px var(--var2);
     padding: 5px;
     overflow: hidden;
 }
-
 .blog-post-container img{
     width: 100%;
     height: 100%;
@@ -528,8 +487,6 @@ box-shadow: 1px 1px 4px var(--var2);
     line-height: 25px;
     font-weight: 500;
 }
-
-
 #specific-blog-post{
     max-width: 1200px;
     margin: 20px auto;
@@ -544,8 +501,6 @@ box-shadow: 1px 1px 4px var(--var2);
 .wp-block-image{
     margin: 0 auto;
     width: 95%;
-   
-    
 }
 #specific-blog-post a{
     font-size: 1.2em;
@@ -556,12 +511,23 @@ box-shadow: 1px 1px 4px var(--var2);
     float: right;
     letter-spacing: 1px;
 }
-
-
-
-
-
-
+.view-more-button{
+    border: 0;
+    width: 200px;
+    background: var(--var2);
+    color: var(--var1);
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    box-shadow: 1px 1px 4px var(--var2);
+    display: flex;
+    margin: 5rem auto;
+    padding: 10px 15px;
+    justify-content: center;
+}
 /* About */
 .obiwan{
     margin: 15px auto;
@@ -579,7 +545,6 @@ box-shadow: 1px 1px 4px var(--var2);
     padding: 10px 2px;
     margin-bottom: 10px;
     text-align: center;
-  
 }
 .container-1 h2{
     text-align: center;
@@ -588,7 +553,6 @@ box-shadow: 1px 1px 4px var(--var2);
     font-size: 1.8em;
     letter-spacing: 2px;
 }
-
 .container-1 h3{
     text-align: center;
     margin: 0 auto;
@@ -598,7 +562,6 @@ box-shadow: 1px 1px 4px var(--var2);
     text-transform: uppercase;
     padding-bottom: 20px;
 }
-
 .about{
     max-width: 400px;
     text-align: left;
@@ -615,16 +578,14 @@ box-shadow: 1px 1px 4px var(--var2);
 .about h3{
     font-size: 1.2em;
 }
-
+/* Media Inqueries */
 /* Big phones */
 @media screen and (min-width: 500px){
     .welcome-text{
         max-width: 70%;
     }
 }
-
 /* Tablet 750px */
-
 @media screen and (min-width: 750px){
     h1{
         font-size: 1.5em;
@@ -632,7 +593,6 @@ box-shadow: 1px 1px 4px var(--var2);
     .welcome{
         display: flex;
     }
-    
     .container-1 h1{
       font-size: 1.5em;
     }
@@ -658,18 +618,14 @@ box-shadow: 1px 1px 4px var(--var2);
     }
     .form-container textarea{
         height: 120px;
-
     }
-
     .blogPosts h1{
         margin: 0 auto;
         margin-bottom: 20px;
         max-width: 400px;
         font-size: 1.5em;
         text-align: center;
-
     }
-
     .author{
         position: absolute;
         transform: translate(-50%, -50%);
@@ -677,7 +633,6 @@ box-shadow: 1px 1px 4px var(--var2);
         width: 150px;
         left: 50%;
         font-size: 1em;
-        
     }
     .carousel-slider {
         max-width: 90%;
@@ -702,14 +657,11 @@ box-shadow: 1px 1px 4px var(--var2);
     .next{
         right: 5%;
     }
-   
-    
 }
 @media screen and (min-width: 1000px){
     h1{
         font-size: 1.6em;
     }
-    
     .carousel-slide img{
         max-height: 500px;
     }
@@ -728,8 +680,6 @@ box-shadow: 1px 1px 4px var(--var2);
         right: 18%;
     }
 }
-
-
 /* Laptop 1200px */
 @media screen and (min-width: 1200px){
     h1{
@@ -752,7 +702,6 @@ box-shadow: 1px 1px 4px var(--var2);
       .about h3{
           font-size: 1.2em;
       }
-
       .subscribe-button{
           padding: 10px 60px;
       }
@@ -785,8 +734,6 @@ box-shadow: 1px 1px 4px var(--var2);
       }
       .blogPosts img{
          height: auto;
-         
-          
       }
       .author{
           position: unset;
@@ -800,13 +747,11 @@ box-shadow: 1px 1px 4px var(--var2);
       .blog-post-container p{
           max-width: 70%;
           margin: 0 auto;
-          
       }
       #specific-blog-post h1{
           font-size: 1.8em;
           letter-spacing: 1px;
       }
-      
       .carousel-slide img{
           height: 600px;
       }
@@ -820,31 +765,16 @@ box-shadow: 1px 1px 4px var(--var2);
       .prev{
           left: 30%;
       }
-      
       .next{
           right: 30%;
       }
-      
-    
-
-      
-      
 }
-
-
-
-
-/* Desktop 1920px */
-
-
-/* Small phones etc*/
+/* Small fixed I had to do*/
 @media screen and (max-width: 630px){
      .carousel-slide img{
          max-height: 400px;
      }
-     
 }
-
 @media screen and (max-width: 350px){
     .form-container{
         max-width: 250px;
@@ -852,7 +782,6 @@ box-shadow: 1px 1px 4px var(--var2);
     .form-container h2{
         font-size: 1em;
     }
-    
     .about h2{
         font-size: 1.4em;
     }
@@ -869,26 +798,7 @@ box-shadow: 1px 1px 4px var(--var2);
      .carousel-slide img{
         height: 250px;
      }
-     
 }
-
-
-.loader{
-    background-image: url(/images/799.gif);
-    width: 100%;
-    background-repeat: no-repeat;
-    height: 100px;
-    background-position: center;
-    text-align: center;
-    background-size: 100px;
-    font-family: freckle face;
-    letter-spacing: 2px;
-    max-width: 250px;
-    margin: 0 auto;
-}
-
-
-
 @media screen and (max-width: 800px){
     .carousel-slide img{
         max-height: 300px;
@@ -900,7 +810,6 @@ box-shadow: 1px 1px 4px var(--var2);
     .welcome-section{
         height: 350px;
     }
-    
 }
 @media screen and (max-width: 500px){
     .carousel-slide img{
@@ -910,25 +819,4 @@ box-shadow: 1px 1px 4px var(--var2);
         bottom: 20%;
         font-size: 0.5em;
     }
-    
-    
-
 }
-
-  .view-more-button{
-    border: 0;
-    width: 200px;
-    background: var(--var2);
-    color: var(--var1);
-    border-radius: 5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: 'Noto Sans JP', sans-serif;
-    box-shadow: 1px 1px 4px var(--var2);
-    display: flex;
-    margin: 5rem auto;
-    padding: 10px 15px;
-    justify-content: center;
-  }
