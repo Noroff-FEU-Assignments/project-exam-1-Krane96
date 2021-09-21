@@ -66,6 +66,11 @@ if(name.length <5){
     return false;
 }
 
+if(email.match(pattern)) {
+    text = "jhonny";
+    errorMsg.innerHTML = text;
+    return true;
+}
 
 
 
@@ -84,7 +89,7 @@ if(message.length <25){
 
 
 
-return true;
+
 
 }
 
