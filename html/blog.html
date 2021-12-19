@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="Gymrat Blog" content="A blog about training, weightlifting, nutrution news and personal tips and workouts">
+    <title>Gymrat | Blog</title>
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/31bc2b28fe.js" crossorigin="anonymous"></script>
@@ -14,7 +15,7 @@
 <body>
     <section>
         <header>
-            <h1 href="/index.html" class="logo">Gymrat</h1>
+            <a href="/index.html"><h1 class="logo">Gymrat</h1></a>
             <input type="checkbox" id="chk">
             <label for="chk" class="show-menu-button">
                 <i class="fas fa-bars"></i>
@@ -35,37 +36,34 @@
     <div class="container-1">
         <h1>Blog</h1>
     </div>
-     <div class="loader">Loading....</div>
+     <div class="loader"><h2>Loading Posts...</h2></div>
   <div class="blogPosts">
-      
-       
-        
+      <!-- API data comes here -->  
     </div>
-    <footer>
-        <div class="subscribe">
-            <div class="subscribe-2">
-            <h2>Newsletter</h2>
-        </div>
-            <div class="subscribe-3">
-            <input type="text" placeholder="Your e-mail address" id="email">
-            <button class="subscribe-button">Subscribe</button>
-        </div>
-        </div>
-        <div class="footer-container">
-            <a href="index.html" class="logo">Gymrat</a>
-            <p>Feel free to follow on social media</p>
-            <ul class="social-media">
-                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-youtube"></i></a></li>
-            </ul>
-        </div>
-        <div class="copyright-footer">
-            <p>Copyright Gymrat &copy;2021</p>
-        </div>
-    </footer>
-
-
-    <script src="/scripts/script.js"></script>
+    <button class="view-more-button">View More</button>
+<footer>
+    <div class="subscribe">
+        <div class="subscribe-2">
+        <h2>Newsletter</h2>
+    </div>
+        <div class="subscribe-3">
+        <input type="text" placeholder="Your e-mail address" id="email">
+        <button class="subscribe-button">Subscribe</button>
+    </div>
+    </div>
+    <div class="footer-container">
+        <a href="/index.html" class="logo">Gymrat</a>
+        <p>Feel free to follow on social media</p>
+        <ul class="social-media">
+            <li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    <div class="copyright-footer">
+        <p>Copyright Gymrat &copy;2021</p>
+    </div>
+</footer>
+<script src="/scripts/blog.js"></script>
 </body>
 </html>

@@ -7,11 +7,16 @@ body{
 html{
     height: 100%;
 }
-
 h1{
     font-size: 1.4em;
+    margin: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: luckiest guy;
+    padding: 10px 2px;
+    margin-bottom: 10px;
+    text-align: center;
 }
-
 :root{
   --var1: #0b090a;
   --var2: #f5cb5c;
@@ -21,11 +26,9 @@ h1{
   --var6: #3E5C76;
   --var7: #495057;
 }
-
 section{
     background: var(--var1);
 }
-
 .subscribe-button{
 border: none;
 background: var(--var2);
@@ -37,9 +40,12 @@ letter-spacing: 1px;
 cursor: pointer;
 font-weight: bold;
 font-family: 'Noto Sans JP', sans-serif;
-border-bottom: 3px solid rgba(151, 99, 2, 0.534);
-
-
+border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+border-right: 2px solid rgba(0, 0, 0, 0.4);
+}
+.subscribe-button:hover{
+  background: rgb(214, 172, 31);
+  transition: 0.4s;
 }
 /* Menu */
 header{
@@ -58,9 +64,8 @@ header{
     font-size: 1.6em;
     letter-spacing: 2px;
     text-decoration: none;
-    margin-top: 1.5rem;
+    
 }
-
 .menu{
     float: right;
     line-height: 80px;
@@ -88,7 +93,6 @@ header{
 .show-menu-button i{
     line-height: 80px;
 }
-
 .show-menu-button, .hide-menu-button{
     transition: 0.4s;
     cursor: pointer;
@@ -98,7 +102,6 @@ header{
 .menu a:hover, .show-menu-button:hover, .hide-menu-button:hover{
 color: var(--var2);
 }
-
 #chk{
     position: absolute;
     visibility: hidden;
@@ -116,13 +119,17 @@ color: var(--var2);
 .logo-mobile{
     display: none;
 }
-
-
+/*Mobile Responsive Menu */
 @media screen and (max-width: 750px){
     .show-menu-button, .hide-menu-button{
         display: block;
-        font-size: 1.6em;
+        margin-right: 10px;
     }
+    .hide-menu-button{
+        font-size: 1.4em;
+        margin: 0;
+    }
+
     .menu{
         position: fixed;
         width: 100%;
@@ -135,8 +142,6 @@ color: var(--var2);
         line-height: normal;
         transition: 0.7s;
         margin-top: 0;
-        
-        
     }
     .menu a{
         display: block;
@@ -152,8 +157,6 @@ color: var(--var2);
     #chk:checked ~ .menu{
         right: 0;
     }
-    
-    
     .copyright-menu{
         display: block;
     }
@@ -165,30 +168,103 @@ color: var(--var2);
         font-size: 1.2em;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin-top: 25px;
         left: 0;
         margin-left: 30px;
     }
-    
+    .logo{
+        margin-left: 0;
+    }
 }
-
+.welcome-section{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/images/anastase-maragos-7P5AOnw6cWQ-unsplash\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    padding: 5px 0;
+    position: relative;
+    background-attachment: fixed;
+}
+.welcome-section h1, .welcome-section p{
+    color: var(--var3);
+}
+.welcome-section p{
+    text-align: center;
+    max-width: 85%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.welcome-text{
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 15px;
+    max-width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+}
 .container-1{
     max-width: 1200px;
     margin: 0 auto;
 }
 /* Carousel */
-.carousel p{
+.carousel-slider ul, .carousel-slider p{
     display: none;
 }
-
+.carousel-slide{
+    width: 100%;
+    display: none;
+}
+.carousel-slide:first-of-type{
+    display: block;
+}
+.carousel-slide img{
+    width: 100%;
+}
+.carousel-slider{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    color: var(--var2);
+    font-weight: bold;
+    font-size: 3em;
+    display: block;
+  }
+  .next{
+   right: 0;
+  }
+  .text {
+    color: var(--var3);
+    font-size: 1.4em;
+    position: absolute;
+    bottom: 30%;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: luckiest guy;
+    letter-spacing: 2px;
+    width: 80%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 15px;
+    padding: 5px 0;
+    padding-top: 10px;
+  }
 /* Footer */
-
 footer{
     background: var(--var7);
     color: var(--var3);
     width: 100%;
     margin-top: 0;
-    
 }
 .subscribe{
     background-color: rgba(0, 0, 0, 0.699);
@@ -202,10 +278,7 @@ footer{
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 10px;
-    
-    
 }
-
 .subscribe-2 h2{
     background-color: #ec4646;
     padding: 5px 15px;
@@ -215,9 +288,6 @@ footer{
     border-radius: 1px;
     margin-left: 0;
     margin-top: 0;
-    
-    
-    
 }
 .subscribe-2 h3{
     margin: 20px 10px;
@@ -233,19 +303,19 @@ footer{
     overflow: hidden;
     font-size: 0.7em;
 }
-
 .subscribe-3{
     display: flex;
     justify-content: center;
-     
 }
-
 .footer-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+.footer-container .logo{
+    margin-top: 2rem;
 }
 .social-media{
     list-style: none;
@@ -258,7 +328,6 @@ footer{
 .social-media li{
     margin: 0 10px;
 }
-
 .social-media a{
     text-decoration: none;
     color: var(--var3);
@@ -286,31 +355,24 @@ footer{
     line-height: 30px;
     font-size: 1em;
 }
-
-
-
 /* Contact HTML*/
-
-
-
 .form-container{    
     max-width: 300px;
-    
     background: var(--var1);
     padding: 20px;
     border-radius: 2px;
     box-shadow:  1px 1px 5px;
     margin: 40px auto;
-    
 }
 .form-container h2{
     text-align: center;
     margin-bottom: 20px;
     color: var(--var3);
     font-size: 1.3em;
-
 }
-
+input:focus{
+    outline: none;
+}
 .form-container .contact-input{
  margin-bottom: 10px;
 }
@@ -330,8 +392,6 @@ footer{
 ::placeholder{
     padding-left: 5px;
 }
-
-
 .form-container .submit-button input[type="submit"]{
 border: 0;
 width: 100%;
@@ -347,7 +407,6 @@ font-weight: bold;
 font-family: 'Noto Sans JP', sans-serif;
 box-shadow: 1px 1px 4px var(--var2);
 }
-
 .form-container #error-message{
     margin-bottom: 20px;
     padding: 0;
@@ -360,7 +419,6 @@ box-shadow: 1px 1px 4px var(--var2);
     border-radius: 2px;
     text-transform: capitalize;
 }
-
 .subscribe-2::after {
     content: '';
     border: .5rem solid transparent;
@@ -371,6 +429,19 @@ box-shadow: 1px 1px 4px var(--var2);
 }
 
 /* Blog HTML */
+.loader{
+    background-image: url(/images/799.gif);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
+    text-align: center;
+    background-size: 100px;
+    font-family: freckle face;
+    letter-spacing: 2px;
+    max-width: 250px;
+    margin: 0 auto;
+}
 .blogPost{
     margin-top: 50px;
 }
@@ -417,7 +488,6 @@ box-shadow: 1px 1px 4px var(--var2);
     padding: 5px;
     overflow: hidden;
 }
-
 .blog-post-container img{
     width: 100%;
     height: 100%;
@@ -428,8 +498,6 @@ box-shadow: 1px 1px 4px var(--var2);
     line-height: 25px;
     font-weight: 500;
 }
-
-
 #specific-blog-post{
     max-width: 1200px;
     margin: 20px auto;
@@ -444,8 +512,6 @@ box-shadow: 1px 1px 4px var(--var2);
 .wp-block-image{
     margin: 0 auto;
     width: 95%;
-   
-    
 }
 #specific-blog-post a{
     font-size: 1.2em;
@@ -456,12 +522,27 @@ box-shadow: 1px 1px 4px var(--var2);
     float: right;
     letter-spacing: 1px;
 }
-
-
-
-
-
-
+.view-more-button{
+    border: 0;
+    width: 200px;
+    background: var(--var6);
+    color: var(--var3);
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    box-shadow: 1px 1px 4px var(--var6);
+    display: flex;
+    margin: 5rem auto;
+    padding: 10px 15px;
+    justify-content: center;
+}
+.view-more-button:hover{
+    background: var(--var7);
+    transition: 0.4s;
+}
 /* About */
 .obiwan{
     margin: 15px auto;
@@ -479,7 +560,6 @@ box-shadow: 1px 1px 4px var(--var2);
     padding: 10px 2px;
     margin-bottom: 10px;
     text-align: center;
-  
 }
 .container-1 h2{
     text-align: center;
@@ -488,7 +568,6 @@ box-shadow: 1px 1px 4px var(--var2);
     font-size: 1.8em;
     letter-spacing: 2px;
 }
-
 .container-1 h3{
     text-align: center;
     margin: 0 auto;
@@ -498,7 +577,6 @@ box-shadow: 1px 1px 4px var(--var2);
     text-transform: uppercase;
     padding-bottom: 20px;
 }
-
 .about{
     max-width: 400px;
     text-align: left;
@@ -515,16 +593,21 @@ box-shadow: 1px 1px 4px var(--var2);
 .about h3{
     font-size: 1.2em;
 }
-
-
-
+/* Media Inqueries */
+/* Big phones */
+@media screen and (min-width: 500px){
+    .welcome-text{
+        max-width: 70%;
+    }
+}
 /* Tablet 750px */
-
 @media screen and (min-width: 750px){
+    h1{
+        font-size: 1.5em;
+    }
     .welcome{
         display: flex;
     }
-    
     .container-1 h1{
       font-size: 1.5em;
     }
@@ -550,18 +633,14 @@ box-shadow: 1px 1px 4px var(--var2);
     }
     .form-container textarea{
         height: 120px;
-
     }
-
     .blogPosts h1{
         margin: 0 auto;
         margin-bottom: 20px;
         max-width: 400px;
         font-size: 1.5em;
         text-align: center;
-
     }
-
     .author{
         position: absolute;
         transform: translate(-50%, -50%);
@@ -569,24 +648,61 @@ box-shadow: 1px 1px 4px var(--var2);
         width: 150px;
         left: 50%;
         font-size: 1em;
-        
     }
-    
-    .slide img{
-        max-height: 600px;
+    .carousel-slider {
+        max-width: 90%;
+    }
+    .carousel-slide img{
+        max-height: 400px;
     }
     #specific-blog-post h1{
         font-size: 1.6em;
         letter-spacing: 1px;
     }
-   
-    
+    .welcome-section{
+        height: 450px;
+    }
+    .welcome-text{
+        padding-bottom: 20px;
+        max-width: 60%;
+    }
+    .prev{
+        left: 5%;
+    }
+    .next{
+        right: 5%;
+    }
 }
-
-
-
+@media screen and (min-width: 1000px){
+    h1{
+        font-size: 1.6em;
+    }
+    .carousel-slide img{
+        max-height: 500px;
+    }
+    .carousel-slide{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .text{
+        width: 50%;
+        left: 25%;
+    }
+    .prev{
+        left: 18%;
+    }
+    .next{
+        right: 18%;
+    }
+    .text{
+        font-size: 1.6em;
+    }
+}
 /* Laptop 1200px */
 @media screen and (min-width: 1200px){
+    h1{
+        font-size: 1.7em;
+    }
     .container-1 h1{
         font-size: 1.6em;
         margin: 15px 0;
@@ -604,7 +720,6 @@ box-shadow: 1px 1px 4px var(--var2);
       .about h3{
           font-size: 1.2em;
       }
-
       .subscribe-button{
           padding: 10px 60px;
       }
@@ -637,8 +752,6 @@ box-shadow: 1px 1px 4px var(--var2);
       }
       .blogPosts img{
          height: auto;
-         
-          
       }
       .author{
           position: unset;
@@ -652,27 +765,43 @@ box-shadow: 1px 1px 4px var(--var2);
       .blog-post-container p{
           max-width: 70%;
           margin: 0 auto;
-          
       }
       #specific-blog-post h1{
           font-size: 1.8em;
           letter-spacing: 1px;
       }
-
-    
-
-      
-      
+      .carousel-slide img{
+          height: 600px;
+      }
+      .carousel-slide{
+          width: 60%;
+      }
+      .text{
+          max-width: 30%;
+          left: 35%;
+      }
+      .prev{
+          left: 30%;
+      }
+      .next{
+          right: 30%;
+      }
+      .blog-post-container ul{
+        margin-left: 8rem;
+      }
+      .welcome-section p{
+          font-size: 1.3em;
+      }
+      .text{
+          font-size: 1.7em;
+      }
 }
-
-
-
-
-/* Desktop 1920px */
-
-
-/* Small phones etc*/
-
+/* Small fixed I had to do*/
+@media screen and (max-width: 630px){
+     .carousel-slide img{
+         max-height: 400px;
+     }
+}
 @media screen and (max-width: 350px){
     .form-container{
         max-width: 250px;
@@ -680,7 +809,6 @@ box-shadow: 1px 1px 4px var(--var2);
     .form-container h2{
         font-size: 1em;
     }
-    
     .about h2{
         font-size: 1.4em;
     }
@@ -694,117 +822,28 @@ box-shadow: 1px 1px 4px var(--var2);
     .slide img{
         max-height: 200px;
      }
+     .carousel-slide img{
+        height: 250px;
+     }
 }
-
-
-.loader{
-    background-image: url(/images/799.gif);
-    width: 100%;
-    background-repeat: no-repeat;
-    height: 100px;
-    background-position: center;
-    text-align: center;
-    background-size: 100px;
-}
-
-
-
-.slide{
-    display: none;
-
-}
-.welcome-slider{
-    margin: 0 auto;
-    position: relative;
-    color: var(--var3);
-    font-size: 1.6em;
-    width: 100%; 
-}
-.slide img{
-    width: 100%;
-    vertical-align: middle;
-    height: 500px;
-    
-}
-.prevBtn, .nextBtn{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    font-size: 1.8em;
-    padding: 15px;
-
-
-}
-.prevBtn:hover, .nextBtn:hover{
-    transition: 0.7s;
-    color: var(--var2);
-}
-.nextBtn{
-    right: 0;
-    margin-right: 10px;
-}
-.prevBtn {
-    margin-left: 10px;
-}
-.welcome-button{
-    color: var(--var3);
-    border-radius: 2rem;
-    border: 2px solid var(--var2);
-    background: none;
-    font-size: 1.1em;
-    padding: 5px 55px;
-    cursor: pointer;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-    
-}
-.welcome-button:hover{
-    background-color: var(--var2);
-    transition: 0.4s;
-    color: var(--var1);
-    opacity: 0.9;
-}
-.image-text{
-    width: 100%;   
-    position: absolute;  
-    bottom: 40%;
-    text-align: center;
-    left: 0;
-}
-
-
 @media screen and (max-width: 800px){
-    .slide img{
+    .carousel-slide img{
         max-height: 300px;
     }
     .image-text{
         bottom: 30%;
         font-size: 0.7em;
     }
+    .welcome-section{
+        height: 350px;
+    }
 }
 @media screen and (max-width: 500px){
-    .slide img{
-        max-height: 200px;
+    .carousel-slide img{
+        max-height: 250px;
     }
     .image-text{
         bottom: 20%;
         font-size: 0.5em;
     }
-}
-
-
-
-
-.carousel-slider ul, .carousel-slider p{
-    display: none;
-}
-.carousel-slider{
-    width: 100%;
-    
-}
-.carousel-slide{
-    width: 90%;
-    display: flex;
-    overflow: hidden;
 }
