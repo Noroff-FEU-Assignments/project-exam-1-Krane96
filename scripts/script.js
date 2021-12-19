@@ -12,7 +12,7 @@ async function getBlogPosts(){
 
     catch(error){
         console.log(error);
-    }
+    }       
 };
 
 getBlogPosts();
